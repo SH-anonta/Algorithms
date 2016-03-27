@@ -1,16 +1,7 @@
 //Code generates prime numbers, using discarded mathod of sieve of eratosthenes
 
-
-#include <algorithm>
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <cstring>
-#include <cstdlib>
-#include <cstdarg>
-#include <cctype>
 #include <cstdio>
-
 
 using namespace std;
 

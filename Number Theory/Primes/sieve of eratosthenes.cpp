@@ -23,13 +23,6 @@ short COUNT_;
 #define sf scanf
 #define pf printf
 #define NL pf("\n");
-#define put(x_) pf("%d", x_)
-#define read(x_) sf("%d", &x_)
-#define readf(x_) sf("%f", &x_)
-#define read2(x_,y_) sf("%d%d",&x_,&y_)
-#define arySZ(x_) sizeof(x_)/sizeof(x_[0])  //(array must be in scope)
-#define ALPHAB "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#define ALPHAb "abcdefghijklmnopqrstuvwxyz"
 #define SS pf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++COUNT_);
 #define DD(x_) cout<<">>>>( "<<++COUNT_<<" ) "<<#x_<<": "<<x_<<endl;
 

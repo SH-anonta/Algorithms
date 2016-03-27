@@ -1,4 +1,6 @@
-//#Name: Anonta Haque #Problm:  
+//Code generates prime numbers, using discarded mathod of sieve of eratosthenes
+
+
 #include <algorithm>
 #include <iostream>
 #include <fstream>

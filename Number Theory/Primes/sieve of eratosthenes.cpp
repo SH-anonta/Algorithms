@@ -74,7 +74,7 @@ void sieve(int N)
         
     }
     
-    pf("\n%d\n", primeCount);
+    pf("\nPrime number count: %d\n", primeCount);
 }
 
 

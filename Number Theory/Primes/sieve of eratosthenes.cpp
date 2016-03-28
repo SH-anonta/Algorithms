@@ -54,7 +54,7 @@ void sieve(int N)
     
     //generates primes by skipping even numbers
     //and composite numbers marked by 'stat' array
-    for(int i= 3, j= 0; i<=N; i+= 2)
+    for(int i= 3, j= 1; i<=N; i+= 2)
     {
         if(stat[i] == 0)   //if not marked as composite
         {

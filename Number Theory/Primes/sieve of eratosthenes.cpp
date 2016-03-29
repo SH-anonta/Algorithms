@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <cstdio>
+#include <cmath>
+#include <ctime>
 
 using namespace std;
 
@@ -18,13 +20,13 @@ short COUNT_;
 #define NL pf("\n");
 #define SS pf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++COUNT_);
 #define DD(x_) cout<<">>>>( "<<++COUNT_<<" ) "<<#x_<<": "<<x_<<endl;
-
+#define EXT(st_) cout<<">>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
 
 //constants
 const int sz= 1E6;      //size of array to hold prime numbers
-
+const int prime_sz= 8E4;	
 bool stat[sz+10];       //to mark composite as 1 then avoid them to generate primes
-int primes[sz+10];      //8E4 is enough for storing primes within 2-1E6 
+int primes[prime_sz+10];      //8E4 is enough for storing primes within 2-1E6 
 
 void sieve(int N)
 {
@@ -74,7 +76,8 @@ void sieve(int N)
 
 int main(void)
 {
-    sieve(1e6);    
+    sieve(1e6);
+    
     
     return 0;
 }

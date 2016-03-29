@@ -23,10 +23,10 @@ short COUNT_;
 #define EXT(st_) cout<<">>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
 
 //constants
-const int sz= 1E6;      //size of array to hold prime numbers
+const int stat_sz= 1E6;      //size of array to hold prime numbers
 const int prime_sz= 8E4;	
-bool stat[sz+10];       //to mark composite as 1 then avoid them to generate primes
-int primes[prime_sz+10];      //8E4 is enough for storing primes within 2-1E6 
+bool stat[stat_sz+10];       //to mark composite as 1 then avoid them to generate primes
+int primes[prime_sz];      //8E4 is enough for storing primes within 2-1E6 
 
 void sieve(int N)
 {
@@ -78,7 +78,7 @@ int main(void)
 {
     sieve(1e6);
     
-    
+            
     return 0;
 }
 

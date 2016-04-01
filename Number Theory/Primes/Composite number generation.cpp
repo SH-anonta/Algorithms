@@ -35,7 +35,7 @@ void sieve(LL N)
 //    int composite_count= 3;
     
     //safety check
-    if(N >= arySZ(composites) || N >= arySZ(composites)){
+    if(N >= arySZ(stat) || N >= arySZ(composites)){
         pf("Array to short!!!\n");
         return;
     }

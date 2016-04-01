@@ -21,6 +21,8 @@ short COUNT_;
 #define SS pf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++COUNT_);
 #define DD(x_) cout<<">>>>( "<<++COUNT_<<" ) "<<#x_<<": "<<x_<<endl;
 #define EXT(st_) cout<<">>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
+#define arySZ(x_) sizeof(x_)/sizeof(x_[0])  //(array must be in scope)
+
 
 //constants
 const int stat_sz= 1E6;      //size of array to hold prime numbers
@@ -33,8 +35,12 @@ void sieve(int N)
     int sqrtN= sqrt(double(N));
     int primeCount= 1;
     
+    if(N >= arySZ(stat) || N >= arySZ(primes)){
+        pf("Array to short!!!\n");
+        return;
+    }
     
-    //marks all the composite numbers from 9 to [sz]
+    //marks all the odd composite numbers from 9 to [sz]    
     //even numbers are not marked as they are skipped altogether
     for(int i= 3, j; i<=sqrtN; i+=2)
     {

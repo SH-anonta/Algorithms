@@ -46,7 +46,6 @@ LL todec(string& bin)
 //Convert from binary (c style string)to decimal number (integer)
 LL todec(char* bin)
 {
-    SS
     LL dec= 0;
     short i= 0,
     len= strlen(bin) -1;

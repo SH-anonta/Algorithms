@@ -50,7 +50,7 @@ void sieve(LL N)
         //if not marked as odd composite yet
         if(stat[i] == 0)
         {
-            for(int j= i*i; j<N; j+= i<<1)
+            for(int j= i*i; j<=N; j+= i<<1)
             {
                 stat[j]= 1;
             }

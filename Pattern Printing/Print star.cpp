@@ -1,4 +1,4 @@
-// Prints a resizable star like this:
+// Prints a resizable star like this: (Size 3)
 // 
 //          *
 //         ***

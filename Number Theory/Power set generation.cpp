@@ -39,7 +39,7 @@ bool comp(const vector<int>& a,const  vector<int>& b){return a.size() < b.size()
 //arguments:
 //1. array/set to generate power set of
 //2. length of the array^
-//3. the 2D vector in which the power set will be saved
+//3. the 2D vector in which the power set will be stored in
 template <typename T>
 void powerSet(T* set, int len, vector<vector<T>>& pset)
 {
@@ -70,8 +70,10 @@ int main(void)
 {
     double tt;
     const int setSize= 10;
-    vector<vector<int>> pset;
+    //generate the power set of this set
     int set[setSize]= {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    //2D vector to store the power set
+    vector<vector<int>> pset;
     
     powerSet(set, setSize, pset);
     
@@ -82,7 +84,8 @@ int main(void)
 
     //number of subsets //also equal to 2^setSize
     int subsets= pset.size(); 
-    int elements;   //#of elements of current subset
+    //#of elements of current subset
+    int elements;
     for(int i= 0; i<subsets; i++)
     {
         elements= pset[i].size();
@@ -90,6 +93,7 @@ int main(void)
         {
             cout<<pset[i][j] <<" ";
         }
+        //one subset per line
         cout<<endl;
     }
     

@@ -1,6 +1,6 @@
 //Power set generation!
 //Generate a power set of a set, store in a 2D vector
-
+//Time complexity O(n*2^n)
 /*
  *Generate power set using bit mask:
  * power set of {A,B,C}

@@ -1,6 +1,6 @@
 //Power set generation!
 //Generate a power set of a set, store in a 2D vector
-//Time complexity O(n*2^n)
+
 /*
  *Generate power set using bit mask:
  * power set of {A,B,C}
@@ -39,9 +39,9 @@ bool comp(const vector<int>& a,const  vector<int>& b){return a.size() < b.size()
 //arguments:
 //1. array/set to generate power set of
 //2. length of the array^
-//3. the 2D vector in which the power set will be stored in
+//3. the 2D vector in which the power set will be saved
 template <typename T>
-void powerSet(T* set, int len, vector<vector<T>>& pset)
+void powerSet(T* set, int len, vector<vector<T> >& pset)
 {
      //sets limit to 2 raised to the power of len
      //there are total of 2^n combinations of the set elements
@@ -52,7 +52,7 @@ void powerSet(T* set, int len, vector<vector<T>>& pset)
     {
         for(int i= 0; i<len; i++)
         {
-            if((mask & 1<<i) == 0) //bit masking
+            if((mask & 1<<i) != 0) //bit masking
             {
 //                cout<<set[i] <<" ";
                 pset[mask].push_back(set[i]);
@@ -69,11 +69,10 @@ void powerSet(T* set, int len, vector<vector<T>>& pset)
 int main(void)
 {
     double tt;
-    const int setSize= 10;
-    //generate the power set of this set
-    int set[setSize]= {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    //2D vector to store the power set
-    vector<vector<int>> pset;
+    const int setSize= 5;
+    vector<vector<int> > pset;
+//    int set[setSize]= {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int set[setSize]= {1, 2, 3, 4, 5};
     
     powerSet(set, setSize, pset);
     
@@ -84,8 +83,7 @@ int main(void)
 
     //number of subsets //also equal to 2^setSize
     int subsets= pset.size(); 
-    //#of elements of current subset
-    int elements;
+    int elements;   //#of elements of current subset
     for(int i= 0; i<subsets; i++)
     {
         elements= pset[i].size();
@@ -93,7 +91,6 @@ int main(void)
         {
             cout<<pset[i][j] <<" ";
         }
-        //one subset per line
         cout<<endl;
     }
     

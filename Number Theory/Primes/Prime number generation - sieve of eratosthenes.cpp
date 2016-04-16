@@ -1,5 +1,6 @@
 //Code generates prime numbers, using discarded mathod of sieve of eratosthenes
-
+//Code generates prime numbers, upto n
+//To generate the first n prime numbers, just chang line 61 i<=N to j<=N
 #include <iostream>
 #include <cstdio>
 #include <cmath>
@@ -34,12 +35,7 @@ void sieve(int N)
 {
     int sqrtN= sqrt(double(N));
     int primeCount= 1;
-    
-    if(N >= arySZ(stat) || N >= arySZ(primes)){
-        pf("Array to short!!!\n");
-        return;
-    }
-    
+       
     //marks all the odd composite numbers from 9 to [sz]    
     //even numbers are not marked as they are skipped altogether
     for(int i= 3, j; i<=sqrtN; i+=2)
@@ -62,6 +58,7 @@ void sieve(int N)
     
     //generates primes by skipping even numbers
     //and composite numbers marked by 'stat' array
+    //To generate the first n prime numbers, just chang i<=N to j<=N
     for(int i= 3, j= 1; i<=N; i+= 2)
     {
         if(stat[i] == 0)   //if not marked as composite

@@ -1,10 +1,10 @@
-//Code counts number of divisors of a number
-//done using prime factorizing the number
+//Code counts number of divisors of a number N (including 1 and N)
+//done using prime factorizing the number(requires prime numbers upto sqrt(N))
 //and using their power to find out the number of divisors
 //...Since divisors are just products of different combinations of the prime factors
 
 //If we can write N = X1^P1 * X2^P2 * X3^P3 * ... Xn^Pn
-//Where X are prime factors of N and P are their powers
+//Where X1,X2... are prime factors of N and P1,P2... are their powers
 //then the number of divisors of N is (P1 + 1) * (P2 + 1) * ... (Pn + 1)
 
 #include <iostream>
@@ -14,7 +14,7 @@ using namespace std;
 
 
 const int stat_sz= 1E6;      //size of array to hold prime numbers
-const int prime_sz= 8E4;	
+const int prime_sz= 8E4;    
 
 bool stat[stat_sz+10];       //to mark composite as 1 then avoid them to generate primes
 int primes[prime_sz]; 
@@ -37,7 +37,6 @@ int divisorCount(T num)
             factorPower++;
             num /= primes[i];
         }
-        
         
         divCount *= factorPower + 1;
     }
@@ -97,6 +96,5 @@ void sieve(int N)
             j++;
             primeCount++;
         }
-        
     }    
 }

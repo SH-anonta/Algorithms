@@ -3,13 +3,15 @@
 
 using namespace std;
 
+
 void fobonacci(int n)
 {
-    int first= 0, second= 1, third= 1;
+    unsigned long long first= 0, second= 1, third= 1;
     
-    for(int i= 0; i<n; i++)
+    while(n--)
     {
         cout<< third << " ";
+        
         third= first+second;
         first= second;
         second= third;
@@ -20,7 +22,7 @@ void fobonacci(int n)
 
 int main(void)
 {
-    fobonacci(10);
+    fobonacci(50);
     
     return 0;
 }

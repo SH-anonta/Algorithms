@@ -11,3 +11,8 @@
 
 *  [Pattern Printing](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
 *  [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
+
+*  test
+  *test1
+  *test2
+  *test3

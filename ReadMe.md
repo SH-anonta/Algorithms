@@ -12,7 +12,8 @@
 *  [Pattern Printing](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
 *  [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
 
-*  test
-  *test1
-  *test2
-  *test3
+
+1.  No encounters
+2.  Encounters
+    1. First kind
+    2. Second kind

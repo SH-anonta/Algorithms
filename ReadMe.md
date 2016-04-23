@@ -2,18 +2,12 @@
 
 ###Index:
 
-*.  [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
+1. [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 
-*.  [Number Theory](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
+2. [Number Theory](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
     *[Divisors](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Divisors)
     *[Number Bases](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
     *[Prime Numbers](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers)
 
-*.  [Pattern Printing](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
-*.  [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
-
-
-1.  No encounters
-2.  Encounters
-    1. First kind
-    2. Second kind
+3. [Pattern Printing](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
+4. [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)

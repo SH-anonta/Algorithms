@@ -5,6 +5,8 @@
 + [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 
 + [Number Theory](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
+
++ Number Theory
  *[Divisors](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Divisors)
  *[Number Bases](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
  *[Prime Numbers](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers) 

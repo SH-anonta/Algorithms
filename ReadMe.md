@@ -18,9 +18,7 @@
     	- [Prime number generation - sieve of eratosthenes.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20number%20generation%20-%20sieve%20of%20eratosthenes.cpp)
 
 + [Pattern Printing](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
-	- [Print star.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
-	- []()
+  - [Print star.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
 
 + [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
-	- [Palindrome check.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
-	- []()
+  - [Palindrome check.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)

@@ -7,6 +7,7 @@
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	- [Fibonacci Series generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Fibonacci%20Series%20generation.cpp)
 	- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Power%20set%20generation.cpp)
+    ----------------------------------------
     * [**Divisors**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Divisors)
     	- [Number of divisors (from prime factors)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Divisors/Number%20of%20divisors%20(from%20prime%20factors).cpp)
     * [**Number Bases**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
@@ -22,3 +23,10 @@
 
 + [**String Manipulation**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
   - [Palindrome check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
+
+
+<ol>
+	<li>
+		[**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
+	</li>
+</ol>

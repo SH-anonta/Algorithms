@@ -19,6 +19,8 @@
 
 + [Pattern Printing](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
 	- [Print star.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
-	
+	- []()
+
 + [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
 	- [Palindrome check.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
+	- []()

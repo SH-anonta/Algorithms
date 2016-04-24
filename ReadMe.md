@@ -23,4 +23,4 @@
 + [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
   - [Palindrome check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
 
-+ <a href="http://google.com"> test </a>
++ <b><a href="http://google.com"> test </a> </b>

@@ -2,15 +2,7 @@
 
 ###Index:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-+ [####Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
-=======
-+ [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
->>>>>>> parent of d19c72a... index update
-=======
-+ [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
->>>>>>> parent of d19c72a... index update
++ [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 
 + [Number Theory](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	- [Fibonacci Series generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Fibonacci%20Series%20generation.cpp)
@@ -31,4 +23,9 @@
 + [String Manipulation](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
   - [Palindrome check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
 
-+ <b><a href="http://google.com"> test </a> </b>
+<p>
+	<b><a href="http://google.com"> test </a> </b>
+	test
+	teste
+	tesrt
+</p>

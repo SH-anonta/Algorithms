@@ -3,7 +3,11 @@
 ###Index:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 + [####Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
+=======
++ [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
+>>>>>>> parent of d19c72a... index update
 =======
 + [Big Integer](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 >>>>>>> parent of d19c72a... index update

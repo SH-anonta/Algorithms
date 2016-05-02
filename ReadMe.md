@@ -6,7 +6,7 @@
     	- [Prime number generation - sieve of eratosthenes](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20number%20generation%20-%20sieve%20of%20eratosthenes.cpp)
     	- [Composite number generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Composite%20number%20generation.cpp)
     	- [Prime Factorization](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20Factorization.cpp)
-    	- [Prime Check - simle algo](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20check%20-%20simle%20algo.cpp)
+    	- [Prime Check - simple algo](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20check%20-%20simle%20algo.cpp)
     * [**Divisors**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Divisors)
     	- [Number of divisors (from prime factors)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Divisors/Number%20of%20divisors%20(from%20prime%20factors).cpp)
     * [**Number Bases**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)

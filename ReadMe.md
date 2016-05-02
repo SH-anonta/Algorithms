@@ -5,6 +5,8 @@
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
 	- [My template](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
 + [**Data Structures**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures)
+	* [Stack](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Stack)
+		- [Stack made from array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20made%20from%20array.cpp)
 	- [Variable Sized Array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Variable%20Sized%20Array.cpp)
 + [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)

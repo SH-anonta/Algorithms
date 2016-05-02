@@ -1,5 +1,9 @@
 ##Implimentation of Algorithems and Datastructures
 ###Index:
+
+
++ [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
+	-[My template](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
 + [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	* [**Prime Numbers**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers)

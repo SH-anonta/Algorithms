@@ -9,21 +9,21 @@ namespace myStack{
     template <typename T>
     class stack{
     private:
-        int peek, capacity;
+        int position, capacity;
         T* array;
     public:
         stack(int sz){
-            peek= -1;
+            position= -1;
             capacity = sz;
             array = new T[sz];
         }
 
         bool empty(){
-            return peek == -1;
+            return position == -1;
         }
         
         bool full(){
-            return peek == capacity - 1;
+            return position == capacity - 1;
         }
         
         void push(T obj){
@@ -31,8 +31,8 @@ namespace myStack{
                 cerr<<"Stack full  overflow error!"<<endl;
                 return;
             }
-            peek++;
-            array[peek] = obj;
+            position++;
+            array[position] = obj;
         }
         
         void pop(){
@@ -40,7 +40,7 @@ namespace myStack{
                 cerr<<"Stack empty underflow error!"<<endl;
                 return;
             }
-            peek--;
+            position--;
         }
         
         T top(){
@@ -48,7 +48,7 @@ namespace myStack{
                 cerr<<"Stack empty!"<<endl;
             }
             
-            return array[peek];
+            return array[position];
         }
     };
 }

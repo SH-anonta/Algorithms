@@ -4,6 +4,8 @@
 
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
 	- [My template](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
++ [**Data Structures**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures)
+	- [Variable Sized Array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Variable%20Sized%20Array.cpp)
 + [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	* [**Prime Numbers**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers)
@@ -21,8 +23,6 @@
 		- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Power%20set%20generation.cpp)
 + [**Sorting Algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Sorting%20Algorithems)
 	- [Selection Sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Selection%20Sort.cpp)
-+ [**Data Structures**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures)
-	- [Variable Sized Array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Variable%20Sized%20Array.cpp)
 + [**Pattern Printing**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
   - [Print star](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
 + [**String Manipulation**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)

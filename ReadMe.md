@@ -18,6 +18,7 @@
     * [**Number Bases**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
     	- [Binary to decimal converter](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Binary%20to%20decimal%20converter.cpp)
 	* [**Miscellaneous**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Miscellaneous)
+		- [Big Mod - Modular exponentiation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Big%20Mod%20-%20Modular%20exponentiation.cpp)
 		- [Summing digits (recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Summing%20digits%20(recursive).cpp)
 		- [Generating Fibonacci sequence](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Generating%20Fibonacci%20sequence.cpp)
 		- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Power%20set%20generation.cpp)

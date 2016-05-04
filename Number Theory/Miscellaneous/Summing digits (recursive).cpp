@@ -8,7 +8,8 @@ using namespace std;
 //Sums digits of a number until 1 digit number is achived
 int sumDigits(int num){
     int sum= 0;
-    if(num < 10) return num;
+    // if(num < 10) return num;
+    if(num<10 && num>-10) return num;
     else{
         while(num){
             sum += num%10;
@@ -20,6 +21,6 @@ int sumDigits(int num){
 
 int main()
 {
-	cout<< sumDigits(64689) <<endl;
+	cout<< sumDigits(-64689) <<endl;
 	return 0;
 }

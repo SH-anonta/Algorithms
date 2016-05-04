@@ -21,6 +21,6 @@ int sumDigits(int num){
 
 int main()
 {
-	cout<< sumDigits(-64689) <<endl;
+	cout<< sumDigits(64689) <<endl;
 	return 0;
 }

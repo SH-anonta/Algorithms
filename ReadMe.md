@@ -31,5 +31,5 @@
 + [**String Manipulation**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)
   - [Palindrome check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
   - [Pangram check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Pangram%20check.cpp)
-
+  - [Find string occurrance](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Find%20string%20occurrance.cpp)
   

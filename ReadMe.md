@@ -26,7 +26,7 @@
 		- [Summing digits (recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Summing%20digits%20(recursive).cpp)
 		- [Generating Fibonacci sequence](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Generating%20Fibonacci%20sequence.cpp)
 		- [random numbers](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/random%20numbers.cpp)
-		- [Jjosephus Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Jjosephus%20Problem.cpp)
+		- [Josephus Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Josephus%20Problem.cpp)
 		- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Power%20set%20generation.cpp)
 + [**Sorting Algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Sorting%20Algorithems)
 	- [Selection Sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Selection%20Sort.cpp)

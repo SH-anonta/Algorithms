@@ -7,7 +7,7 @@ using namespace std;
 
 //returns a string object containing the bit string of a number
 template <typename T>
-string tobin(T num){
+string toBinary(T num){
     string bin;
     
     while(num != 0){
@@ -30,7 +30,7 @@ int main(void)
     while(1){
         cin>>num;
         
-        bin = tobin(num);
+        bin = toBinary(num);
         
         cout<< bin <<endl;
         

@@ -18,6 +18,7 @@
     * [**Divisors**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Divisors)
     	- [Number of divisors (from prime factors)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Divisors/Number%20of%20divisors%20(from%20prime%20factors).cpp)
     * [**Number Bases**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
+    	- [Decimal to binary converter](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Decimal%20to%20binary%20converter.cpp)
     	- [Binary to decimal converter](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Binary%20to%20decimal%20converter.cpp)
 	* [**Miscellaneous**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Miscellaneous)
 		- [Big Mod - Modular exponentiation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Big%20Mod%20-%20Modular%20exponentiation.cpp)

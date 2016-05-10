@@ -1,10 +1,9 @@
 //Implementation of two stacks in one array
 //For space efficiency, the stacks stacks start piling elements form
-//opposite sides of the array this allows the two stacks to share the same space 
+//opposite sides of the array
 
 #include <iostream>
 #include <cstdlib>
-
 using namespace std;
 
 //Binary stack/ 2stacks in one array
@@ -25,6 +24,7 @@ public:
     
     //All both stacks have their own methods same name but numbered 1 and 2
     
+    
     int size1(){
         return peek1+1;
     }
@@ -32,6 +32,10 @@ public:
     int size2(){
         return len-peek2;
     }
+    
+    bool full(){
+        return peek1 == peek2-1;
+    }    
     
     bool empty1(){
         return peek1 == -1;
@@ -51,7 +55,7 @@ public:
     
     void push1(T obj){
         //if there is no space between the two stacks
-        if(peek1 == peek2-1){ 
+        if(full()){ 
             cerr<<"Stack Overflow Error!"<<endl;
             exit(1);
         }
@@ -62,7 +66,7 @@ public:
     
     void push2(T obj){
         //if there is no space between the two stacks
-        if(peek1 == peek2-1){
+        if(full()){
             cerr<<"Stack Overflow Error!"<<endl;
             exit(1);
         }
@@ -73,7 +77,7 @@ public:
     }
     
     T pop1(void){
-        if(peek1 == -1){ //if first stack has no elements
+        if(empty1()){ //if first stack has no elements
             cerr<<"Stack Underflow Erroe!"<<endl;
             exit(1);
         }
@@ -83,7 +87,7 @@ public:
     }
     
     T pop2(void){
-        if(peek2 == len){ //if second stack has no elements
+        if(empty2()){ //if second stack has no elements
             cerr<<"Stack Underflow Erroe!"<<endl;
             exit(1);
         }
@@ -101,7 +105,7 @@ int main(void)
     stacks.push1(1);
     stacks.push1(2);
     stacks.push1(3);
-//    s.push1(7);
+//    stacks.push1(7);
 
     stacks.push2(9);
     stacks.push2(8);
@@ -114,6 +118,7 @@ int main(void)
     cout<< stacks.top1() <<endl;
     stacks.pop1();
     cout<< stacks.top1() <<endl;
+    stacks.pop1();
     
     cout<<"\nstack 2:"<<endl;
     

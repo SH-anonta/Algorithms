@@ -10,22 +10,21 @@ int findOccurrance(string& str, string& target){
     int occurCount= 0;
     int slen = str.size();
     int tlen = target.size();
-    bool found;
     
-    for(int i= 0; i<slen; i++){
-        found = true;
-        for(int j= 0; j<tlen && i+j<slen; j++){
+    for(int i= 0, j; i<slen; i++){
+        for(j= 0; j<tlen && i+j<slen; j++){
             if(target[j] != str[i+j]){
-                found = false;
                 break;
             }
         }
-        if(found) occurCount++;
+        
+        if(j == tlen){ //if all chars of target were checked
+            occurCount++;
+        }
     }
     
     return occurCount;
 }
-
 
 
 

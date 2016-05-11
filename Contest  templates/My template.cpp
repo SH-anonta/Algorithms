@@ -20,10 +20,10 @@
 
 using namespace std;
 
-typedef long long LL;            //"%lld"
+typedef long long LL;
 typedef vector<int> vint;
 typedef pair<int,int> pint;
-typedef unsigned long long ULL;  //"%llu"
+typedef unsigned long long ULL;
 
 short CC_;
 #define sf scanf

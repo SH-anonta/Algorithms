@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <cstdlib>
+
 using namespace std;
 
 //Binary stack/ 2stacks in one array
@@ -56,7 +57,7 @@ public:
     void push1(T obj){
         //if there is no space between the two stacks
         if(full()){ 
-            cerr<<"Stack Overflow Error!"<<endl;
+            std::cerr<<"Stack Overflow Error!"<<std::endl;
             exit(1);
         }
         
@@ -67,7 +68,7 @@ public:
     void push2(T obj){
         //if there is no space between the two stacks
         if(full()){
-            cerr<<"Stack Overflow Error!"<<endl;
+            std::cerr<<"Stack Overflow Error!"<<std::endl;
             exit(1);
         }
         
@@ -78,7 +79,7 @@ public:
     
     T pop1(void){
         if(empty1()){ //if first stack has no elements
-            cerr<<"Stack Underflow Erroe!"<<endl;
+            std::cerr<<"Stack Underflow Error!"<<std::endl;
             exit(1);
         }
         
@@ -88,7 +89,7 @@ public:
     
     T pop2(void){
         if(empty2()){ //if second stack has no elements
-            cerr<<"Stack Underflow Erroe!"<<endl;
+            std::cerr<<"Stack Underflow Error!"<<std::endl;
             exit(1);
         }
         peek2++;

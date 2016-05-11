@@ -54,16 +54,16 @@ bool comp(const int& a,const int& b){return a>b;} //reverse sort
 
 void solve(void)
 {
-    int T, n;
+    int Tc, n;
  
-    cin>>T;
+    cin>>Tc;
 //    while(cin>>n)
-    for(int tst= 1; tst<=T; tst++)
+    for(int Case= 1; Case<=Tc; Case++)
     {
         cin>>n;
         
         
-        pf("Case %d: %d\n", tst, n);
+        pf("Case %d: %d\n", Case, n);
     }
     
 }

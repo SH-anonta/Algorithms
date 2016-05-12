@@ -12,6 +12,8 @@
 	* [**Stack**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Stack)
 		- [Stack made from array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20made%20from%20array.cpp)
 		- [Two stacks in one array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Two%20stacks%20in%20one%20array.cpp)
+	* [**Queue**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Queue)
+		- [Fixed sized Queue in array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Queue/Fixed%20sized%20Queue%20in%20array.cpp)
 	* [**Miscellaneous**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Miscellaneous)
 + [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)

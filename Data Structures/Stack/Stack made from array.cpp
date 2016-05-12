@@ -9,13 +9,13 @@ namespace myStack{
     template <typename T>
     class stack{
     private:
-        int position, capacity;
-        T* array;
+        int position, arrayLen;
+        T* data;
     public:
         stack(int sz){
             position= -1;
-            capacity = sz;
-            array = new T[sz];
+            arrayLen = sz;
+            data = new T[sz];
         }
 
         bool empty(){
@@ -23,16 +23,24 @@ namespace myStack{
         }
         
         bool full(){
-            return position == capacity - 1;
+            return position == arrayLen - 1;
         }
         
+        int capacity(){
+            return arrayLen;
+        }
+        
+        int size(){
+            return position + 1;
+        }
+
         void push(T obj){
             if(full()){
                 cerr<<"Stack full  overflow error!"<<endl;
                 return;
             }
             position++;
-            array[position] = obj;
+            data[position] = obj;
         }
         
         void pop(){
@@ -48,7 +56,7 @@ namespace myStack{
                 cerr<<"Stack empty!"<<endl;
             }
             
-            return array[position];
+            return data[position];
         }
     };
 }

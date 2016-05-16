@@ -1,3 +1,16 @@
+//This is an implementation of a doubly linked list
+//This data structure supports the operations listed below
+//
+// constructors: default constructor, copy constructor
+// Push and Pop form back and front
+// clear the whole list
+// Basic getters: front and back node->data
+// 
+// TODO: previous pointer, insert, remove, swap, delete, iterator
+// Copy constructor for List and array, Assignment operator
+
+//// Bug: Copy Constructor, new object has garbage value and program crashes to traverse it
+
 #include <iostream>
 #include <cstdio>
 
@@ -18,7 +31,7 @@ template <typename T>
 class List
 {
 //private:
-public:
+    public:     //TODO: make private!
     class Node{
     public:
         Node* next;
@@ -38,11 +51,27 @@ public:
     Node* tail;
     
 public:
-    //constructors
+    //Default constructor
     List(){
         nodeCount= 0;
         tail= NULL;
         head= NULL;
+    }
+    
+    //Copy constructor
+    List(const List& cpy){
+        //doing self copy would result in erasing it's own data
+        if(this == &cpy){
+            SS
+            return;
+        }
+        
+        clear();
+        Node* i= cpy.head;
+        while(i != NULL){
+            pushBack(i->data);
+            i = i->next;
+        }
     }
     
     //Destructor
@@ -50,6 +79,13 @@ public:
         clear();
     }
     
+    T& front(){
+        return head->data;
+    }
+    
+    T& back(){
+        return tail->data;
+    }
     bool empty(){
         return nodeCount == 0;
     }
@@ -72,7 +108,7 @@ public:
         
     }
     
-    void pushBack(T element){
+    void pushBack(const T& element){
         nodeCount++;
         if(tail == NULL){
             head = tail = new Node(element);
@@ -83,14 +119,31 @@ public:
         tail = tail->next;
     }
     
+    void pushFront(const T& element){
+        nodeCount++;
+        if(head == NULL){
+            head = tail = new Node(element);
+            return;
+        }
+        
+        Node* temp = new Node(element);
+        temp->next= head;
+        head = temp;
+    }
+    
+    void popFront(){
+        delete head;
+        head = head->next;
+    }
+    
     void print(){
         Node* i= head;
         //Until the next pointer is 0
         while(i != NULL){
-            cout<< i->data <<endl;
+            std::cout<< i->data <<" ";
             i= i->next;
         }
-        
+        std::cout<<std::endl;
     }
 };
 
@@ -101,9 +154,19 @@ int main(void)
     l.pushBack(12);
     l.pushBack(13);
     l.pushBack(14);
-    l.pushBack(72);
     
+    l.pushFront(212);
+    l.pushFront(293);
+    l.pushFront(292);
+    
+    cout<< "Linked List l:\n";
     l.print();
+    
+    
+    List<int> m(l);
+    
+    cout<< "Linked List l:\n";
+    m.print();
     
     return 0;
 }

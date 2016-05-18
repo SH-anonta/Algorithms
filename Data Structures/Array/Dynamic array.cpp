@@ -1,4 +1,6 @@
 // Dynamic array implementation
+// in other words Simplified version of vector class
+// array's size must be changed manually 
 
 #include <iostream>
 

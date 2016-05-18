@@ -32,6 +32,18 @@ public:
         }
     }
     
+    Vector(T& cpy){
+        if(cpy.capacity > capacity){
+            clear();
+            data = new T[cpy.capacity];
+        }   
+        
+        capacity = cpy.capacity;
+        for(int i= 0; i<capacity; i++){
+            data[i] = cpy.data[i];
+        }
+    }
+    
     //TODO copy constructor
     Vector(const Vector& cpy){
         if(this == &cpy) return;
@@ -39,7 +51,7 @@ public:
         clear();
         resize(cpy.capacity);   //TODO check for bugs
         for(int i= 0; i<cpy.capacity; i++){
-            data[i] = cpy[i];
+            data[i] = cpy.data[i];
         }
     }
     
@@ -79,7 +91,6 @@ public:
         if(cpy.capacity > capacity){
             clear();
             data = new T[cpy.capacity];
-            
         }   
         
         capacity = cpy.capacity;
@@ -114,10 +125,13 @@ int main(void)
 
     a.print();
     
-    Vector<int> b;
-    
-    b= a;
-    
+    Vector<int> b(a);
+   
     b.print();
+    
+    Vector<int> c = a;
+    
+    c.print();
+    
     return 0;
 }

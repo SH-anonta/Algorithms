@@ -9,6 +9,7 @@
 		- [Find mode of array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Array/Find%20mode%20of%20array.cpp)
 		- [Cyclic traversal of array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Array/Cyclic%20traversal%20of%20array.cpp)
 		- [Variable Sized Array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Array/Variable%20Sized%20Array.cpp)
+		- [Dynamic array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Array/Dynamic%20array.cpp)
 	* [**Linked list**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Linked%20List)
 		- [Linked List Implementation (Under development!)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Linked%20List/Linked%20List%20Implementation.cpp)
 	* [**Stack**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Stack)

@@ -5,6 +5,7 @@
 using namespace std;
 
 template <typename T>
+class Vector
 {
 private:
     int capacity;
@@ -13,14 +14,17 @@ private:
 public:
     //Constructors
     //Default
+    Vector(){
         capacity = 0;
         data = NULL;
     }
     
+    explicit Vector(int sz){
         data = new T[sz];
         capacity = sz;
     }
     
+    Vector(int sz, const T& cont){
         data = new T[sz];
         capacity = sz;
         for(int i= 0; i<sz; i++){
@@ -29,6 +33,7 @@ public:
     }
     
     //TODO copy constructor
+    Vector(const Vector& cpy){
         if(this == &cpy) return;
         
         clear();
@@ -39,6 +44,7 @@ public:
     }
     
     //Destructor
+    ~Vector(){
         delete[] data;
     }
     
@@ -69,6 +75,7 @@ public:
         return data[index];
     }
     
+    void operator=(Vector& cpy){
         if(cpy.capacity > capacity){
             clear();
             data = new T[cpy.capacity];
@@ -93,6 +100,7 @@ public:
 
 int main(void)
 {
+    Vector<int> a(5);
     
     a[0]= 1;
     a[1]= 2;
@@ -106,6 +114,7 @@ int main(void)
 
     a.print();
     
+    Vector<int> b;
     
     b= a;
     

@@ -40,6 +40,7 @@
 		- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Power%20set%20generation.cpp)
 + [**Searching Algorithems**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Searching%20Algorithems)
 	- [Binary search (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Recursive).cpp)
+	- [Binary search (Iterative)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Iterative).cpp)
 + [**Sorting Algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Sorting%20Algorithems)
 	- [Selection Sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Selection%20Sort.cpp)
 + [**Pattern Printing**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)

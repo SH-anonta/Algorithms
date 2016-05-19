@@ -7,7 +7,7 @@
 // Basic getters: front and back node->data
 // 
 // TODO: previous pointer, insert, remove, swap, delete, iterator
-// Copy constructor for List and array, Assignment operator
+// Assignment operator, find, concat two lists, 
 
 //// Bug: Copy Constructor, new object has garbage value and program crashes to traverse it
 
@@ -33,6 +33,7 @@ class List
     class Node{
     public:
         Node* next;
+//        Node* previous;
         T data;
         //constructors
         Node(void){
@@ -56,7 +57,7 @@ public:
         head= NULL;
     }
     
-    //Copy constructor
+    //TODO: Fix bug Copy constructor
     List(const List& cpy){
         //doing self copy would result in erasing it's own data
         if(this == &cpy){
@@ -67,7 +68,7 @@ public:
         clear();
         Node* i= cpy.head;
         while(i != NULL){
-            pushBack(i->data);
+            this->pushBack(i->data);
             i = i->next;
         }
     }
@@ -104,6 +105,7 @@ public:
             delete iback;
         }
         
+        head = tail = NULL;
     }
     
     void pushBack(const T& element){
@@ -130,9 +132,12 @@ public:
     }
     
     void popFront(){
+        nodeCount--;
         delete head;
         head = head->next;
     }
+    
+    //TODO add popBack()
     
     void print(){
         Node* i= head;
@@ -147,24 +152,26 @@ public:
 
 int main(void)
 {
-    List<int> l;
+    List<int> a;
     
-    l.pushBack(12);
-    l.pushBack(13);
-    l.pushBack(14);
+    a.pushBack(12);
+    a.pushBack(13);
+    a.pushBack(14);
     
-    l.pushFront(212);
-    l.pushFront(293);
-    l.pushFront(292);
+    a.pushFront(212);
+    a.pushFront(293);
+    a.pushFront(292);
     
-    cout<< "Linked List l:\n";
-    l.print();
+    cout<< "Linked List a:\n";
+    
+    a.print();
+    
+
+    List<int> b(a);
     
     
-    List<int> m(l);
-    
-    cout<< "Linked List l:\n";
-    m.print();
+    cout<< "Linked List b:\n";
+    b.print();
     
     return 0;
 }

@@ -32,12 +32,12 @@ short CC_;
 #define NL pf("\n");
 #define dcc (double)
 #define PP getchar();
-#define SS pf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
+#define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
 
 //constants
-const int SZ= 1E4;
+const int SZ= 1E6;
 const int INF= (1<<29);
 const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
@@ -78,11 +78,7 @@ int main(void)
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-//     while(true)
     solve();
     
     return 0;
 }
-
-
-

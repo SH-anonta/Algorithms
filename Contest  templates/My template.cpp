@@ -51,7 +51,7 @@ template <class T>inline T LCM(T x,T y){return((x*y)/__gcd(x,y));}
 int bigMod(int b,int e,int m){if(e==0)return 1;if(!e&1){int temp=bigMod(b,e/2,m)%m;return(temp*temp)%m;}else return((b%m)*(bigMod(b,e-1,m))%m)%m;}
 LL todec(char* bin){LL dec= 0;short i= 0, len= strlen(bin) -1;while(bin[i]){if(bin[i++]=='1'){dec += 1<<len;} len--;}return dec;}
 inline LL POW(LL base, int exp){LL p= 1; while(exp-->0){p *= base;} return p;}
-bool ispal(char* str, int len){for(int i= 0; i<len/2; i++){if(str[i]==str[len-i-1]){}else return false;}return true;}
+bool ispal(const string& str){int len= str.length();for(int i= 0; i<len/2; i++){if(str[i]==str[len-i-1]){}else return false;}return true;}
 bool comp(const int& a,const int& b){return a>b;}
 
 

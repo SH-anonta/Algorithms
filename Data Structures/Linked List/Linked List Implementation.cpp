@@ -9,7 +9,7 @@
 // TODO: previous pointer, insert, remove, swap, delete, iterator
 // Assignment operator, find, concat two lists, 
 
-//// Bug: Copy Constructor, new object has garbage value and program crashes to traverse it
+//// Bug: clear() unable to find the end of list and gets stuck in a loop
 
 #include <iostream>
 #include <cstdio>
@@ -61,19 +61,24 @@ public:
     List(const List& cpy){
         //doing self copy would result in erasing it's own data
         if(this == &cpy){
-            SS
             return;
         }
         
         clear();
         Node* i= cpy.head;
+        head= tail= new Node(i->data);
+        i = i->next;
+        nodeCount++;
         while(i != NULL){
-            this->pushBack(i->data);
+            tail->next = new Node(i->data);
             i = i->next;
+            tail = tail->next;
+            nodeCount++;
         }
     }
     
-    //Destructor
+
+    //Destructor    
     ~List(){
         clear();
     }
@@ -94,8 +99,8 @@ public:
     }
     
     void clear(){
-        nodeCount= 0;
         if(empty()) return;
+        nodeCount= 0;
         Node* i= head;
         Node* iback;
         
@@ -148,6 +153,22 @@ public:
         }
         std::cout<<std::endl;
     }
+    
+    
+    //BUG
+//    List(const List& cpy){
+//        //doing self copy would result in erasing it's own data
+//        if(this == &cpy){
+//            return;
+//        }
+//        
+//        clear();
+//        Node* i= cpy.head;
+//        while(i != NULL){
+//            this->pushBack(i->data);
+//            i = i->next;
+//        }
+//    }
 };
 
 int main(void)
@@ -158,20 +179,18 @@ int main(void)
     a.pushBack(13);
     a.pushBack(14);
     
-    a.pushFront(212);
-    a.pushFront(293);
-    a.pushFront(292);
+    a.pushFront(33);
+    a.pushFront(29);
+    a.pushFront(22);
     
     cout<< "Linked List a:\n";
     
     a.print();
     
-
-    List<int> b(a);
+//    List<int> b;
+//    
+//    b = a;
     
-    
-    cout<< "Linked List b:\n";
-    b.print();
     
     return 0;
 }

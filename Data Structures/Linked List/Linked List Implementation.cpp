@@ -9,7 +9,7 @@
 // TODO: previous pointer, insert, remove, swap, delete, iterator
 // Assignment operator, find, concat two lists, 
 
-//// Bug: clear() unable to find the end of list and gets stuck in a loop
+//// Bug:
 
 #include <iostream>
 #include <cstdio>
@@ -63,8 +63,7 @@ public:
         if(this == &cpy){
             return;
         }
-        
-        clear();
+
         Node* i= cpy.head;
         head= tail= new Node(i->data);
         i = i->next;
@@ -99,10 +98,12 @@ public:
     }
     
     void clear(){
-        if(empty()) return;
+        if(empty()){
+            return;
+        }
         nodeCount= 0;
         Node* i= head;
-        Node* iback;
+        Node* iback = NULL;
         
         while(i != NULL){
             iback= i;
@@ -169,6 +170,7 @@ public:
 //            i = i->next;
 //        }
 //    }
+    
 };
 
 int main(void)
@@ -187,10 +189,9 @@ int main(void)
     
     a.print();
     
-//    List<int> b;
-//    
-//    b = a;
-    
+    List<int> b(a);
+    b = a;
+    b.print();
     
     return 0;
 }

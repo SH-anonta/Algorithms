@@ -54,6 +54,8 @@ inline LL POW(LL base, int exp){LL p= 1; while(exp-->0){p *= base;} return p;}
 bool ispal(const string& str){int len= str.length();for(int i= 0; i<len/2; i++){if(str[i]==str[len-i-1]){}else return false;}return true;}
 bool comp(const int& a,const int& b){return a>b;}
 
+
+
 void solve(void)
 {
     int Tc;

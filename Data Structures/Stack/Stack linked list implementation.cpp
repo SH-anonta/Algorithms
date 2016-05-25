@@ -1,4 +1,4 @@
-// Stack implimented using singly linked list
+// Stack implemented using singly linked list
 //Bug: Explicitly calling clear() causes un predictable behaviour
 
 #include <iostream>

@@ -69,7 +69,7 @@ void solve(void)
         cin>>n;
         
         
-        pf("Case: %d %d\n", Case, n);
+        pf("Case %d: %d\n", Case, n);
     }
 }
 

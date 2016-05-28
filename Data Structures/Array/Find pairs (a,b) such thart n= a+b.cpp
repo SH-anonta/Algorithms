@@ -3,25 +3,20 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
-
-bool comp(int a, int b){
-    return a>b;
-}
 
 //takes an array, size of array and a number n
 //returns a vector of pairs containing the pairs such that n = a+b
 //returns an empty vector if no such pairs were found
 template <typename T>
-vector<pair<T,T>> findPair(T* ary, int size, const T& target){
-    sort(ary,ary+size);
-    vector<pair<T,T>> pairs;
+std::vector<std::pair<T,T>> findPair(T* ary, int size, const T& target){
+    std::sort(ary,ary+size);
+    std::vector<std::pair<T,T>> pairs;
     int l= 0, r= size-1;
     
     while(l<r){
         if(ary[l]+ary[r] == target){
-            pairs.push_back(pair<T, T>(ary[l],ary[r]));
-//            cout<< ary[l] << " " << ary[r] <<endl;
+            pairs.push_back(std::pair<T, T>(ary[l],ary[r]));
+//           std::cout<< ary[l] << " " << ary[r] <<std::endl;
             l++;
             r--;
         }
@@ -34,6 +29,7 @@ vector<pair<T,T>> findPair(T* ary, int size, const T& target){
 
 int main(void)
 {
+    using namespace std;
     const int size= 10;
     int a[size] = {3, 6, 7, 1, 8, 2, 5, 4, 12, 9};
     
@@ -47,7 +43,6 @@ int main(void)
     for(int i= 0; i<len; i++){
         cout<< res[i].first << " " << res[i].second <<endl;
     }
-    
     
     return 0;
 }

@@ -3,7 +3,8 @@
 
 
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
-	- [My template](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
+	- [My template Java](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Java%20template.java)
+	- [My template C++](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
 + [**Data Structures**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures)
 	* [**Array**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Array)
 		- [Find mode of array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Array/Find%20mode%20of%20array.cpp)

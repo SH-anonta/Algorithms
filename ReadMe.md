@@ -15,7 +15,7 @@
 	* [**Linked list**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Linked%20List)
 		- [Linked List Implementation (Under development!)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Linked%20List/Linked%20List%20Implementation.cpp)
 	* [**Stack**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Stack)
-		- [Stack linked list implementation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20linked%20list%20implementation.cpp)
+		- [Stack implementation using linked list](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20implementation%20using%20linked%20list.cpp)
 		- [Stack made from array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20made%20from%20array.cpp)
 		- [Two stacks in one array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Two%20stacks%20in%20one%20array.cpp)
 	* [**Queue**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Queue)

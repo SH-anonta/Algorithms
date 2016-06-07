@@ -6,7 +6,7 @@
 #include <cstring>
 
 //converts string object 
-long long toDecimal(const std::string& bin){
+long long binarToDecimal(const std::string& bin){
     long long res= bin[0] - '0';
     for(int i= 1; bin[i] !='\0'; i++){
         res *= 2;
@@ -17,7 +17,7 @@ long long toDecimal(const std::string& bin){
 }
 
 //converts C string / char array 
-long long toDecimal(const char* bin){
+long long binaryToDecimal(const char* bin){
     long long res= bin[0] - '0';
     for(int i= 1; bin[i] !='\0'; i++){
         res *= 2;
@@ -34,9 +34,9 @@ int main(void)
     
     std::string bin = "11111111110000010110101011010";
     //Using string object:
-    cout<< "Binary: " << bin<< "\nDecimal: " << toDecimal(bin)  <<endl;
+    cout<< "Binary: " << bin<< "\nDecimal: " << binarToDecimal(bin)  <<endl;
     //Using c string:
-    cout<< "\nBinary: " << bin<< "\nDecimal: " << toDecimal(bin.c_str())  <<endl;
+    cout<< "\nBinary: " << bin<< "\nDecimal: " << binaryToDecimal(bin.c_str())  <<endl;
     
     
     return 0;

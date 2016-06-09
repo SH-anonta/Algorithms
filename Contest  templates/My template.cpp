@@ -30,7 +30,6 @@ short CC_;
 #define sf scanf
 #define pf printf
 #define NL pf("\n");
-#define dcc (double)
 #define PP getchar();
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
@@ -42,7 +41,7 @@ const int INF= (1<<29);
 const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
 
-//functions templates
+//function templates
 template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "<<x[i]<<'\n';}
 template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d", st++);*/}
 template <class T>void tobin(T n,char*bin){int pos= 1<<((int)log2(n));while(pos>=1){if((n & pos)==0)*bin='0';else*bin='1';pos>>=1;bin++;}*bin='\0';}

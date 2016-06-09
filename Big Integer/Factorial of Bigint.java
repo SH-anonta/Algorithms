@@ -6,7 +6,7 @@ import java.math.*;
 
 
 class JD1{
-    
+    //return the factorial of a given number
     static BigInteger bigFactorial(BigInteger num){
         BigInteger fact = BigInteger.ONE;
         

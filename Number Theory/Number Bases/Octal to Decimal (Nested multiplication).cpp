@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <cstring>
 
+
 //converts string object 
 long long octalToDecimal(const std::string& oct){
     long long res= oct[0] - '0';
@@ -27,9 +28,10 @@ long long octalToDecimal(const char* oct){
     return res;
 }
 
-//TODO
+//converts long in octal representation to decimal
 long long octalToDecimal(const long long octnum){
-    const int len = 1 + log10(octnum);
+    //log10(n) + 1 is n's digit count, + 1 for null char
+    const int len = 2 + log10(octnum);
     char* oct = new char[len];
     sprintf(oct, "%lld", octnum);
     long long res= oct[0] - '0';
@@ -38,7 +40,7 @@ long long octalToDecimal(const long long octnum){
         
         res += oct[i] - '0';
     }
-    
+    delete[] oct;
     return res;
 }
 

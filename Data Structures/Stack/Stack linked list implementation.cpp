@@ -30,6 +30,27 @@ public:
         nodeCount= 0;
     }
     
+    //copy constructor
+    Stack(const Stack& cpy){
+//        if(this == &cpy){
+//            return;
+//        }
+//        
+//        clear();
+//        if(cpy.empty()){
+//            return;
+//        }
+        nodeCount = cpy.nodeCount;
+        peek = new Node(cpy.peek->data);
+        Node* i= cpy.peek->previous; //points to copy Stack
+        Node* j= peek;               //points to this Stack
+        
+        for(Node* i= cpy.peek->previous; i!=NULL; i= i->previous, j= j->previous){
+            j->previous = new Node(i->data);
+        }
+        
+    }
+    
     bool empty(){
         return nodeCount == 0;
     }
@@ -63,7 +84,6 @@ public:
     
     void clear(){
         if(nodeCount == 0) return;
-        
         Node* i= peek;
         Node* temp;
         while(i != NULL){
@@ -75,8 +95,21 @@ public:
         nodeCount= 0;
     }
     
+    //TODO
+    Stack& operator=(const Stack& cpy){
+
+    }
+    
     ~Stack(){
         clear();
+    }
+    
+    //print all node of stack
+    void print(){
+        for(Node* i = peek; i!=NULL; i= i->previous){
+            std::cout<< i->data <<" ";
+        }
+        std::cout<<std::endl;
     }
 };
 
@@ -86,21 +119,17 @@ int main(void)
     Stack<int> s;
     
     s.push(1);
-    s.push(2);
     s.push(3);
+    s.push(4);
+    s.push(5);
     
-    cout<< s.top() <<endl;
-    s.pop();
-    cout<< s.top() <<endl;
-    s.pop();
-    cout<< s.top() <<endl;
-    s.pop();
+    Stack<int> d(s);
     
-    s.push(1);
-    s.push(2);
-    s.push(3);
+//    s.print();
+    d.print();
     
-    s.clear();
+    d.pop();
+    d.clear();
     
     
     return 0;

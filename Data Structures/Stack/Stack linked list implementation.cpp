@@ -31,15 +31,12 @@ public:
     }
     
     //copy constructor
-    Stack(const Stack& cpy){
-//        if(this == &cpy){
-//            return;
-//        }
-//        
-//        clear();
-//        if(cpy.empty()){
-//            return;
-//        }
+    Stack(Stack& cpy){
+        if(cpy.empty()){
+            peek= NULL;
+            nodeCount= 0;
+            return;
+        }
         nodeCount = cpy.nodeCount;
         peek = new Node(cpy.peek->data);
         Node* i= cpy.peek->previous; //points to copy Stack

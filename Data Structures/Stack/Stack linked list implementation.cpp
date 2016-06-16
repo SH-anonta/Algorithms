@@ -92,6 +92,7 @@ public:
             i= temp;
         }
         
+        peek= NULL;
         nodeCount= 0;
     }
     

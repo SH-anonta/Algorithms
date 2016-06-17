@@ -11,6 +11,7 @@ class Vector
 {
 private:
     int capacity;
+//    int elementCount;
     T* data;
     
 public:
@@ -85,6 +86,30 @@ public:
         return capacity;
     }
     
+    void insert(int index, const T& cpy){
+        if(index<0 || index>capacity-1){
+            std::cerr<< "Can not remove! Invalid index\n";
+            return;
+        }
+        
+        for(int i= capacity-1; i>index; i--){
+            data[i] = data[i-1];
+        }
+        data[index]= cpy;
+    }
+    
+    
+    void remove(const int index){
+        if(index<0 || index>capacity-1){
+            std::cerr<< "Can not remove! Invalid index\n";
+            return;
+        }
+        
+        for(int i= index; i<capacity-1; i++){
+            data[i] = data[i+1];
+        }
+    }
+    
     T& operator[](int index){
         return data[index];
     }
@@ -120,20 +145,14 @@ int main(void)
     a[2]= 3;
     a[3]= 4;
     
+    a.remove(1);
+    a.remove(0);
+    a.insert(0, 3);
+    a.insert(2, 8);
+    a.insert(3, 5);
     
-    a.resize(10);
-    
-    a[4]= 23;
-
     a.print();
     
-    Vector<int> b(a);
-   
-    b.print();
-    
-    Vector<int> c = a;
-    
-    c.print();
     
     return 0;
 }

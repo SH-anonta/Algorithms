@@ -60,6 +60,7 @@ void solve(void)
     int n;
     
     cin>>Tc;
+    cin.ignore();
     
 //    while(cin>>n)
     for(int Case= 1; Case<=Tc; Case++)

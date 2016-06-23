@@ -56,6 +56,9 @@ bool comp(const int& a,const int& b){return a>b;}
 
 void solve(void)
 {
+    // ofstream fout;
+    // fout.open("output.txt");
+
     int Tc;
     int n;
     
@@ -68,8 +71,12 @@ void solve(void)
         cin>>n;
         
         
-        pf("Case %d: %d\n", Case, n);
+        
+        pf("Case %d: %d\n", Case, n);        
+        // fout<< "Case " << Case << ": " <<endl;
     }
+
+    // fout.close();
 }
 
 

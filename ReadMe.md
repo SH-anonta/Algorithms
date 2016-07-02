@@ -19,7 +19,7 @@
 	* [**Stack**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Stack)
 		- [Stack made from array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20made%20from%20array.cpp)
 		- [Two stacks in one array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Two%20stacks%20in%20one%20array.cpp)
-		- [Stack linked list implementation.cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20linked%20list%20implementation.cpp)
+		- [Stack linked list implementation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Stack%20linked%20list%20implementation.cpp)
 		- [Infix to postfix expression conversion](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Stack/Infix%20to%20postfix%20expression%20conversion.cpp)
 	* [**Queue**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Queue)
 		- [Queue impementation using array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Queue/Queue%20impementation%20using%20array.cpp)

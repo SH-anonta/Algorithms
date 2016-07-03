@@ -10,7 +10,7 @@
 //Sort given array in ascending order using bubble sort algorithm
 template <typename T>
 void bubbleSort(T* st, T* nd){
-    int len= nd-st-1;
+    const int len= nd-st;
     bool swaps;
     
     for(int i= 0; i<len; i++){

@@ -1,6 +1,6 @@
 //Insertion sort algorithm: traverse the array left to right,
 //find the most appropriate place for the value on the left side and insert it there
-//Worst case complexity O(n^2)
+//Worst case complexity O(n^2) (initially sorted in reverse order)
 //good for small arrays
 
 #include <iostream>

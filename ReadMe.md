@@ -1,8 +1,8 @@
 ##Implimentation of Algorithems and Datastructures
 ###Index:
 
-+ [**Searching Algorithems**]](#searchalgo)
-------------------------------------------------------------------------------------------------------
++ [Searching Algorithems](#searchalgo)
+
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
 	- [My template Java](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Java%20template.java)
 	- [My template C++](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)

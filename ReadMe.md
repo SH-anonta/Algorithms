@@ -1,6 +1,7 @@
 ##Implimentation of Algorithems and Datastructures
 ###Index:
 
++ [**Searching Algorithems**]](#search algo)
 
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
 	- [My template Java](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Java%20template.java)
@@ -46,7 +47,7 @@
 		- [random numbers](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/random%20numbers.cpp)
 		- [Josephus Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Josephus%20Problem.cpp)
 		- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Power%20set%20generation.cpp)
-+ [**Searching Algorithems**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Searching%20Algorithems)
++ [search algo] [**Searching Algorithems**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Searching%20Algorithems)
 	- [Binary search (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Recursive).cpp)
 	- [Binary search (Iterative)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Iterative).cpp)
 + [**Sorting Algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Sorting%20Algorithems)

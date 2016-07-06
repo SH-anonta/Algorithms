@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include <cstdarg>
 #include <utility>
+#include <bitset>
 #include <cctype>
 #include <cstdio>
 #include <vector>
@@ -70,8 +71,7 @@ void solve(void)
         
         
         
-        pf("Case %d: %d\n", Case, n);        
-        // fout<< "Case " << Case << ": " <<endl;
+        pf("Case %d: %d\n", Case, n);
     }
 
 }

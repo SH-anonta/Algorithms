@@ -43,7 +43,7 @@ inline void quickSort(T* st , T* nd){
     quickSortRecur(st, 0, nd-st -1);
 }
 
-
+//driver function
 int main(void)
 {
     using namespace std;
@@ -52,8 +52,6 @@ int main(void)
 //    int ary[sz]= {9,8,7,6,5,4,3,2,1,0};
     int ary[sz]= {0, -1, -41, 2, 6, 2, 3, 121, -21, 20};
     
-//    quickSort(ary, ary+sz);
-//    quickSort(ary, 0, sz-1);
     quickSort(ary, ary+sz);
             
     for(int i= 0; i<sz; i++){

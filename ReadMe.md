@@ -50,6 +50,7 @@
 	- [Binary search (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Recursive).cpp)
 	- [Binary search (Iterative)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Iterative).cpp)
 + [**Sorting Algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Sorting%20Algorithems)
+	- [Qucik sort (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Qucik%20sort%20(Recursive).cpp)
 	- [Selection Sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Selection%20Sort.cpp)
 	- [Insertion sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Insertion%20sort.cpp)
 	- [Bubble sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Bubble%20sort.cpp)

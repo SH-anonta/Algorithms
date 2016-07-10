@@ -42,6 +42,7 @@
 		- [Big Mod - Modular exponentiation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Big%20Mod%20-%20Modular%20exponentiation.cpp)
 		- [GCD and LCM](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/GCD%20and%20LCM.cpp)
 		- [Summing digits (recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Summing%20digits%20(recursive).cpp)
+		- [Summing digits (Iterative)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Summing%20digits%20(Iterative).cpp)
 		- [Generating Fibonacci sequence](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Generating%20Fibonacci%20sequence.cpp)
 		- [random numbers](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/random%20numbers.cpp)
 		- [Josephus Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Josephus%20Problem.cpp)

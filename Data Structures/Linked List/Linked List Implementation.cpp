@@ -105,6 +105,7 @@ public:
         temp= i->next;
         i->next = temp->next;
         delete temp;
+        nodeCount--;
     }
     
     void clear(){
@@ -189,6 +190,7 @@ public:
         temp= new Node(dt);
         temp->next = i->next;
         i->next = temp;
+        nodeCount++;
     }
     
     void print(){
@@ -270,14 +272,12 @@ int main(void)
     a.insert(0, 11);
     a.insert(3, 1);
     a.print();
+    a.rprint();
+    
 //    a[3] = 13;
 //    cout<< a[3] <<endl;
     
-    
-    
-//    List<int> b(a);
-//    b = a;
-//    b.print();
+//    cout<< a.size()<<endl;
     
     return 0;
 }

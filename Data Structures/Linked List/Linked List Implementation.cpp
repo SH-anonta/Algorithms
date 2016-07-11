@@ -1,3 +1,4 @@
+//Author: Anonta Sofen Haque
 //This is an implementation of a doubly linked list
 //This data structure supports the operations listed below
 //TODO:  Assignment operator, find, concat two lists, 

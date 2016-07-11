@@ -1,18 +1,11 @@
 //This is an implementation of a doubly linked list
 //This data structure supports the operations listed below
-//
-// constructors: default constructor, copy constructor
-// Push and Pop form back and front
-// clear the whole list
-// Basic getters: front and back node->data
-// 
-// TODO: previous pointer, insert, remove, swap, delete, iterator
-// Assignment operator, find, concat two lists, 
-
-//// Bug:
+//TODO:  Assignment operator, find, concat two lists, 
+//// TODO Bugs: Copy constructor, do deep copy
 
 #include <iostream>
 #include <cstdio>
+#include <cstdlib>
 
 using namespace std;
 
@@ -29,7 +22,7 @@ template <typename T>
 class List
 {
 //private:
-    public:     //TODO: make private!
+    private:
     class Node{
     public:
         Node* next;
@@ -59,11 +52,6 @@ public:
     
     //TODO: Fix bug Copy constructor
     List(const List& cpy){
-        //doing self copy would result in erasing it's own data
-        if(this == &cpy){
-            return;
-        }
-
         Node* i= cpy.head;
         head= tail= new Node(i->data);
         i = i->next;
@@ -76,7 +64,6 @@ public:
         }
     }
     
-
     //Destructor    
     ~List(){
         clear();
@@ -89,12 +76,35 @@ public:
     T& back(){
         return tail->data;
     }
-    bool empty(){
+    
+    inline bool empty(){
         return nodeCount == 0;
     }
     
-    int size(){
+    inline int size(){
         return nodeCount;
+    }
+    
+    //removes idx th node
+    void remove(int idx){
+        if(idx<0 || idx >= nodeCount){
+            std::cerr<< "Invalid index of list!\n";
+            exit(1);
+        }
+        if(empty()){
+            std::cerr<< "List underflow error!\n";
+            return;
+        }
+        if(idx == 0){
+            popFront();
+            return;
+        }
+        
+        Node* i= head, *temp;
+        while(idx-- > 1) i = i->next;
+        temp= i->next;
+        i->next = temp->next;
+        delete temp;
     }
     
     void clear(){
@@ -109,8 +119,7 @@ public:
             iback= i;
             i = i->next;
             delete iback;
-        }
-        
+        }        
         head = tail = NULL;
     }
     
@@ -138,12 +147,49 @@ public:
     }
     
     void popFront(){
-        nodeCount--;
-        delete head;
+        if(empty()){
+            std::cerr<< "List underflow error!\n";
+            return;
+        }
+        
+        Node* temp= head;
         head = head->next;
+        delete temp;
+        nodeCount--;
     }
     
-    //TODO add popBack()
+    void popBack(){
+        if(empty()){
+            std::cerr<< "List underflow error!\n";
+            return;
+        }
+        
+        int i = nodeCount - 1;
+        Node* nd = head;
+        while(i-- >1) nd = nd->next;
+        
+        delete nd->next;
+        nd->next = NULL;
+        nodeCount--;
+    }
+    
+    //insert a node containing dt at idx th position
+    void insert(int idx, const T& dt){
+        if(idx<0 || idx >= nodeCount){
+            std::cerr<< "Invalid index of list!\n";
+            exit(1);
+        }
+        if(idx == 0){
+            pushFront(dt);
+            return;
+        }
+        
+        Node* i= head, *temp;
+        while(idx-- > 1) i = i->next;
+        temp= new Node(dt);
+        temp->next = i->next;
+        i->next = temp;
+    }
     
     void print(){
         Node* i= head;
@@ -155,6 +201,18 @@ public:
         std::cout<<std::endl;
     }
     
+    //print reverse
+    void rprint(Node* hd){
+        if(hd == NULL) return;
+        rprint(hd->next);
+        std::cout<< hd->data <<" ";
+        if(hd == head) std::cout<<std::endl;
+    }
+    
+    //wrapper function for ^ reverse print
+    void rprint(){
+        rprint(head);
+    }
     
     //BUG
 //    List(const List& cpy){
@@ -171,10 +229,23 @@ public:
 //        }
 //    }
     
+    T& operator[](int idx){
+        if(idx<0 || idx >= nodeCount){
+            std::cerr<< "Invalid index of list!\n";
+            exit(1);
+        }
+        Node* i= head;
+        while(idx--) i = i->next;
+        
+        return i->data;
+    }
+    
 };
 
 int main(void)
 {
+    using namespace std;
+    
     List<int> a;
     
     a.pushBack(12);
@@ -188,10 +259,25 @@ int main(void)
     cout<< "Linked List a:\n";
     
     a.print();
+//    a.rprint();
     
-    List<int> b(a);
-    b = a;
-    b.print();
+//    a.popFront();
+//    a.popFront();
+//    a.popBack();
+    
+//    a.remove(5);
+    
+    a.insert(0, 11);
+    a.insert(3, 1);
+    a.print();
+//    a[3] = 13;
+//    cout<< a[3] <<endl;
+    
+    
+    
+//    List<int> b(a);
+//    b = a;
+//    b.print();
     
     return 0;
 }

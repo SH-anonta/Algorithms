@@ -1,4 +1,4 @@
-//#Name: Anonta Haque #Problm:  
+//#Name: Anonta Haque #Problm:
 #include <algorithm>
 #include <iostream>
 #include <fstream>
@@ -76,12 +76,16 @@ void solve(void)
 
 }
 
+void dummey(){
+    
+}
 
 int main(void)
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
+    // dummey();
     solve();
 
     

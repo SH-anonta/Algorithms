@@ -1,4 +1,4 @@
-##Implimentation of Algorithems and Datastructures
+##Implimentation of Algorithms and Datastructures
 
 ###Index:
 

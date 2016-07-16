@@ -56,8 +56,7 @@ bool ispal(const string& str){int len= str.length();for(int i= 0; i<len/2; i++){
 bool comp(const int& a,const int& b){return a>b;}
 
 
-void solve(void)
-{
+void solve(void){
     int Tc;
     int n;
     
@@ -65,8 +64,7 @@ void solve(void)
     cin.ignore();
     
 //    while(cin>>n)
-    for(int Case= 1; Case<=Tc; Case++)
-    {
+    for(int Case= 1; Case<=Tc; Case++){
         cin>>n;
         
         
@@ -76,16 +74,12 @@ void solve(void)
 
 }
 
-void dummey(){
-    
-}
 
-int main(void)
-{
+
+int main(void){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // dummey();
     solve();
 
     

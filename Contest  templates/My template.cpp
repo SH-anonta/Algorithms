@@ -43,7 +43,7 @@ const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
 
 //function templates
-template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "<<x[i]<<'\n';}
+template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "<<x[i]<<endl;}
 template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d", st++);*/}
 template <class T>void tobin(T n,char*bin){int pos= 1<<((int)log2(n));while(pos>=1){if((n & pos)==0)*bin='0';else*bin='1';pos>>=1;bin++;}*bin='\0';}
 template <class T>int strOccur(string&s,T&tgt){int oc= 0, p= s.find(tgt);while(p != string::npos){p = s.find(tgt, p+1);oc++;}return oc;}
@@ -64,7 +64,8 @@ void solve(void){
     cin.ignore();
     
 //    while(cin>>n)
-    for(int Case= 1; Case<=Tc; Case++){
+    for(int Case= 1; Case<=Tc; Case++)
+    {
         cin>>n;
         
         

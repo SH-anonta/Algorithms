@@ -30,8 +30,6 @@ typedef unsigned long long ULL;
 short CC_;
 #define sf scanf
 #define pf printf
-#define ff first
-#define ss second
 #define NL cout<<"\n";
 #define PP getchar();
 #define pque priority_queue

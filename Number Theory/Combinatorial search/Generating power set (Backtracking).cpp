@@ -16,20 +16,20 @@
 //^^^ following each branch we get all possible subsets
 
 
-#include iostream
-#include vector
-#include string
+#include <iostream>
+#include <vector>
+#include <string>
 
 
-template typename T
-void powerSet(T ary, int len, stdvectorT combo){
+template <typename T>
+void powerSet(T* ary, int len, std::vector<T> combo){
     //when there is no more items to choose (or not choose)
     if(len == 0){
         int sz= combo.size();
-        for(int i= 0; isz; i++){
-            stdcout combo[i]  ;
+        for(int i= 0; i<sz; i++){
+            std::cout<< combo[i] <<" ";
         }
-        stdcoutstdendl;
+        std::cout<<std::endl;
         return;
     }
     
@@ -41,17 +41,17 @@ void powerSet(T ary, int len, stdvectorT combo){
 }
 
 //wrapper function
-template typename T
-void powerSet(T ary, int len){
-    powerSet(ary, len, stdvectorT());
+template <typename T>
+void powerSet(T* ary, int len){
+    powerSet(ary, len, std::vector<T>());
 }
 
 int main(void)
 {
     using namespace std;
-    char sampleSet[4]= ABC;
+    char sampleSet[4]= "ABC";
 
-    generate power set of ABC
+//    generate power set of ABC
     powerSet(sampleSet, 3);
     return 0;
 }

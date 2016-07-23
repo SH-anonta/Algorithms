@@ -46,7 +46,6 @@
 		- [Generating Fibonacci sequence](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Generating%20Fibonacci%20sequence.cpp)
 		- [random numbers](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/random%20numbers.cpp)
 		- [Josephus Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Josephus%20Problem.cpp)
-		- [Power set generation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Power%20set%20generation.cpp)
 + [**Searching Algorithems**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Searching%20Algorithems)
 	- [Binary search (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Recursive).cpp)
 	- [Binary search (Iterative)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Searching%20Algorithems/Binary%20search%20(Iterative).cpp)

@@ -24,15 +24,19 @@ using namespace std;
 
 typedef long long LL;
 typedef vector<int> vint;
+typedef map<int,int> mint;
 typedef pair<int,int> pint;
 typedef unsigned long long ULL;
 
 short CC_;
 #define sf scanf
+#define fs first
+#define sd second
 #define pf printf
-#define NL cout<<"\n";
 #define PP getchar();
-#define pque priority_queue
+#define NL cout<<"\n";
+#define itr iterator
+#define pqueue priority_queue
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
@@ -43,7 +47,7 @@ const int INF= (1<<29);
 const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
 
-//function templates
+namespace{
 template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "<<x[i]<<endl;}
 template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d", st++);*/}
 template <class T>void tobin(T n,char*bin){int pos= 1<<((int)log2(n));while(pos>=1){if((n & pos)==0)*bin='0';else*bin='1';pos>>=1;bin++;}*bin='\0';}
@@ -55,7 +59,7 @@ int bigMod(int b,int e,int m){if(e==0)return 1;if(!e&1){int temp=bigMod(b,e/2,m)
 inline LL POW(LL base, int exp){LL p= 1; while(exp-->0){p *= base;} return p;}
 bool ispal(const string& str){int len= str.length();for(int i= 0; i<len/2; i++){if(str[i]==str[len-i-1]){}else return false;}return true;}
 bool comp(const int& a,const int& b){return a>b;}
-
+}
 
 void solve(void){
     int Tc;
@@ -81,7 +85,10 @@ int main(void){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    solve();
+//    solve();
+    
+    
+    
 
     return 0;
 }

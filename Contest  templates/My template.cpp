@@ -17,6 +17,7 @@
 #include <queue>
 #include <deque>
 #include <stack>
+#include <list>
 #include <set>
 #include <map>
 
@@ -24,8 +25,9 @@ using namespace std;
 
 typedef long long LL;
 typedef vector<int> vint;
-typedef map<int,int> mint;
 typedef pair<int,int> pint;
+typedef map<int,int> mapii;
+typedef map<int,bool> mapib;
 typedef unsigned long long ULL;
 
 short CC_;
@@ -37,8 +39,9 @@ short CC_;
 #define NL cout<<"\n";
 #define itr iterator
 #define pqueue priority_queue
-#define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
+#define DC(x_) DA(x_.begin(), x_.end());
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
+#define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
 
 //constants
@@ -48,6 +51,7 @@ const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
 
 namespace{
+template <class T>void DA(T i,T e){while(i!=e){cout<<"Con>>( "<<++CC_<<" ) "<<*i++<<endl;}}
 template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "<<x[i]<<endl;}
 template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d", st++);*/}
 template <class T>void tobin(T n,char*bin){int pos= 1<<((int)log2(n));while(pos>=1){if((n & pos)==0)*bin='0';else*bin='1';pos>>=1;bin++;}*bin='\0';}
@@ -85,10 +89,8 @@ int main(void){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-//    solve();
+    solve();
     
-    
-    
-
+   
     return 0;
 }

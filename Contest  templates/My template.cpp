@@ -39,7 +39,7 @@ short CC_;
 #define NL cout<<"\n";
 #define itr iterator
 #define pqueue priority_queue
-#define DC(x_) DA(x_.begin(), x_.end());
+#define DC(x_) cout<<">>> "<<#x_<<"\n";DA(x_.begin(), x_.end());
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;

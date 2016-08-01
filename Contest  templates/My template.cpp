@@ -35,10 +35,11 @@ short CC_;
 #define fs first
 #define sd second
 #define pf printf
+#define itr iterator
 #define PP getchar();
 #define NL cout<<"\n";
-#define itr iterator
 #define pqueue priority_queue
+#define test(x_, i_) ((x_&1<<i_)!=0)
 #define DC(x_) cout<<">>> "<<#x_<<"\n";DA(x_.begin(), x_.end());
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
@@ -90,7 +91,7 @@ int main(void){
     cin.tie(NULL);
 
     solve();
-    
    
+    
     return 0;
 }

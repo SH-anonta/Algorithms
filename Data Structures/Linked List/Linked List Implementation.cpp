@@ -1,17 +1,21 @@
-//Author: Anonta Sofen Haque
-//This is an implementation of a doubly linked list
-//This data structure supports the operations listed below
-//TODO:  Assignment operator, find, concat two lists, 
-//// TODO Bugs: Copy constructor, do deep copy
+//This is an implementation of a Singly linked list
+//TODO: remove an interval Assignment operator, find, concat two lists, 
+// TODO Bugs: Copy constructor, do deep copy
+
+// This data structure supports operations listed below:
+// insert, remove, push/pop front and back
+// reverse entire list
+// print list in as is and in reverse
+// access first and last element in constant time
+
 
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
 #include <algorithm>
 
+//debugging macros
 using namespace std;
-
-
 short CC_;
 #define NL pf("\n");
 #define dcc (double)
@@ -28,7 +32,6 @@ class List
     class Node{
     public:
         Node* next;
-//        Node* previous;
         T data;
         //constructors
         Node(void){
@@ -196,8 +199,6 @@ public:
     
     //reverses the order of nodes
     void reverse(Node* current, Node* previous){
-        DD(current)
-//        PP
         if(current != NULL){
             reverse(current->next, current);
             current->next = previous;   

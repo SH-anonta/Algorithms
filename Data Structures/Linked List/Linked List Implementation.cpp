@@ -7,6 +7,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
+#include <algorithm>
 
 using namespace std;
 
@@ -40,8 +41,7 @@ class List
     
     //Instance variables
     int nodeCount;
-    Node* head;
-    Node* tail;
+    Node *head, *tail;
     
 public:
     //Default constructor
@@ -194,6 +194,21 @@ public:
         nodeCount++;
     }
     
+    //reverses the order of nodes
+    void reverse(Node* current, Node* previous){
+        DD(current)
+//        PP
+        if(current != NULL){
+            reverse(current->next, current);
+            current->next = previous;   
+        }
+    }
+    //wrapper function
+    void reverse(){
+        reverse(head, NULL);
+        swap(head, tail);
+    }
+    
     void print(){
         Node* i= head;
         //Until the next pointer is 0
@@ -261,7 +276,7 @@ int main(void)
     
     cout<< "Linked List a:\n";
     
-    a.print();
+//    a.print();
 //    a.rprint();
     
 //    a.popFront();
@@ -273,7 +288,9 @@ int main(void)
     a.insert(0, 11);
     a.insert(3, 1);
     a.print();
-    a.rprint();
+    a.reverse();
+    a.print();
+//    a.rprint();
     
 //    a[3] = 13;
 //    cout<< a[3] <<endl;

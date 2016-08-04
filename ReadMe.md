@@ -24,6 +24,8 @@
 	* [**Queue**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Queue)
 		- [Queue impementation using array](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Queue/Queue%20impementation%20using%20array.cpp)
 		- [Queue impementation using Linked list](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Queue/Queue%20impementation%20using%20Linked%20list.cpp)
+	* [**Trees**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Trees)
+		- [Binary search tree](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Trees/Binary%20search%20tree.cpp)
 	* [**Miscellaneous**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Miscellaneous)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	* [**Prime Numbers**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers)

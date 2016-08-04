@@ -55,7 +55,6 @@ public:
     
     //find element in tree, returns it's pointer, returns NULL if not found
     T* find(Node* root, const T& target){
-        DD(root->data)
         if(root == NULL) return NULL;
         if(root->data == target) return &(root->data);
         
@@ -100,6 +99,51 @@ public:
         else insert(&root, dt);   
     }
     
+    
+    void remove(Node** doom, const T& target){
+        if(*doom == NULL) return;
+        if((*doom)->data == target){
+            nodeCount--;
+            bool l= (*doom)->lChild != NULL;
+            bool r= (*doom)->rChild != NULL;
+            //if the node is a leaf
+            if(!r && !l){
+                *doom= NULL;
+                delete *doom;
+                return;
+            }
+            Node** newRoot= &(*doom)->rChild;
+            //finding new root
+            if(newRoot != NULL){
+//                DD(newRoot->rChild)
+                while((*newRoot)->lChild != NULL){
+                    newRoot = &((*newRoot)->lChild);
+                }
+            }
+            else{
+                newRoot= &(*doom)->lChild;
+                while((*newRoot)->rChild != NULL){
+                    newRoot = &((*newRoot)->rChild);
+                }
+            } 
+//            DD(newRoot->data)
+            swap((*doom)->data, (*newRoot)->data);
+            *newRoot= NULL;
+            delete *newRoot;
+            return;
+        }
+        
+        if((*doom)->data > target)
+            remove(&(*doom)->lChild, target);
+        else
+            remove(&(*doom)->rChild, target);
+    }
+    
+    void remove(const T& target){
+        if(!empty()) remove(&root, target);
+    }
+    
+    //traverse and print each element in-order
     void inOrder(Node* root){
         if(root == NULL) return;
         inOrder(root->lChild);
@@ -109,6 +153,7 @@ public:
     
     //in order traversal wrapper function
     void inOrder(){
+        if(empty()) return;
         inOrder(root);
         std::cout<<std::endl;
     }
@@ -150,8 +195,16 @@ int main(void)
     t.insert(4);
     
     t.inOrder();
+    t.clear();
+    t.remove(5);
+    t.remove(5);
+    t.remove(0);
+    t.remove(32);
+    t.remove(4);
     
-    cout<< t.find(3) <<endl;
+    t.inOrder();
+    
+//    cout<< *t.find(5) <<endl;
     
     return 0;
 }

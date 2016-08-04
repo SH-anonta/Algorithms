@@ -7,7 +7,6 @@
 
 using namespace std;
 
-//debugging macros
 short CC_;
 #define PP getchar();
 #define NL cout<<"\n";
@@ -52,6 +51,22 @@ public:
     
     inline int size(){
         return nodeCount;
+    }
+    
+    //find element in tree, returns it's pointer, returns NULL if not found
+    T* find(Node* root, const T& target){
+        DD(root->data)
+        if(root == NULL) return NULL;
+        if(root->data == target) return &(root->data);
+        
+        if(root->data >target) return find(root->lChild, target);
+        else return find(root->rChild, target);
+    }
+    
+    //wrapper function
+    T* find(const T& target){
+        if(empty()) return NULL;
+        return find(root, target);
     }
     
     void insert(Node** troot, const T& dt){
@@ -126,18 +141,17 @@ int main(void)
     
     bst<int> t;
     
-    t.insert(0);
     t.insert(5);
-    t.insert(4);
     t.insert(1);
+    t.insert(0);
     t.insert(32);
-    t.insert(32);
-    t.insert(32);
-    t.insert(32);
-    t.insert(3);
     t.insert(12);
+    t.insert(3);
+    t.insert(4);
     
     t.inOrder();
+    
+    cout<< t.find(3) <<endl;
     
     return 0;
 }

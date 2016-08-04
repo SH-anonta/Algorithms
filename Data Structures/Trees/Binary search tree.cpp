@@ -69,7 +69,6 @@ public:
     }
     
     void insert(Node** troot, const T& dt){
-        nodeCount++;
         if(*troot == NULL){
             *troot = new Node(dt);
             return;
@@ -91,19 +90,20 @@ public:
     
     //wrapper function
     void insert(const T& dt){
-        if(empty()){
-            nodeCount++;
+        nodeCount++;
+        if(empty())
             root= new Node(dt);
-            return;
-        }
-        else insert(&root, dt);   
+        else
+            insert(&root, dt);   
     }
     
     
     void remove(Node** doom, const T& target){
-        if(*doom == NULL) return;
+        if(*doom == NULL){
+            nodeCount++;
+            return;
+        }
         if((*doom)->data == target){
-            nodeCount--;
             bool l= (*doom)->lChild != NULL;
             bool r= (*doom)->rChild != NULL;
             //if the node is a leaf
@@ -115,7 +115,6 @@ public:
             Node** newRoot= &(*doom)->rChild;
             //finding new root
             if(newRoot != NULL){
-//                DD(newRoot->rChild)
                 while((*newRoot)->lChild != NULL){
                     newRoot = &((*newRoot)->lChild);
                 }
@@ -126,7 +125,6 @@ public:
                     newRoot = &((*newRoot)->rChild);
                 }
             } 
-//            DD(newRoot->data)
             swap((*doom)->data, (*newRoot)->data);
             *newRoot= NULL;
             delete *newRoot;
@@ -140,7 +138,10 @@ public:
     }
     
     void remove(const T& target){
-        if(!empty()) remove(&root, target);
+        DD(nodeCount)
+        if(empty()) return;
+        remove(&root, target);
+        nodeCount--;
     }
     
     //traverse and print each element in-order
@@ -194,12 +195,15 @@ int main(void)
     t.insert(3);
     t.insert(4);
     
+    DD(t.size())
     t.inOrder();
-    t.clear();
+    
     t.remove(5);
-    t.remove(5);
+    t.remove(1);
     t.remove(0);
     t.remove(32);
+    t.remove(12);
+    t.remove(3);
     t.remove(4);
     
     t.inOrder();

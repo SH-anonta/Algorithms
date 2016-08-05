@@ -1,6 +1,7 @@
 // Binary search tree data structure
 // this is not a balanced tree
 // search, insertion and remove take O(h) [h is the height of the tree]
+//bug: remove method
 
 #include <iostream>
 #include <cstdio>
@@ -202,11 +203,12 @@ int main(void)
     t.remove(1);
     t.remove(0);
     t.remove(32);
+    DD(t.size())
+    t.inOrder();
     t.remove(12);
     t.remove(3);
     t.remove(4);
     
-    t.inOrder();
     
 //    cout<< *t.find(5) <<endl;
     

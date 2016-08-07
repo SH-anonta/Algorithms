@@ -49,6 +49,7 @@ const int SZ= 1E6;
 const int INF= (1<<29);
 const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
+const long long MOD= 1000000007;
 
 namespace{
 template <class T>void DA(T i,T e){while(i!=e){cout<<"Con>>( "<<++CC_<<" ) "<<*i++<<endl;}}

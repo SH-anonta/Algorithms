@@ -30,6 +30,7 @@ typedef map<int,int> mapii;
 typedef map<int,bool> mapib;
 typedef unsigned long long ULL;
 
+//debug
 short CC_;
 #define sf scanf
 #define pf printf

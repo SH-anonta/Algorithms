@@ -10,19 +10,20 @@
 // so l(left side of interval) becomes mid and we just disposed half of our previous interval
 
 #include <iostream>
+#include <cstdio>
 #include <cmath>
-
 
 double squareRoot(double n){
     if(n == 0) return 0.0;
     double l= 1, r= n, mid= (l+r)/2, mm= mid*mid;
     
     //while mid*mid is not equal to n, keep dividing the interval
-    while(fabs(mm-n) > 1E-9){
-        if(n > mm){
+    //using relative error checking to see if mid*mid is close enough to n
+    while(fabs(mm-n)/n > 1E-9){
+        if(n > mm)
             l= mid;
-        }
-        else r= mid;
+        else
+            r= mid;
         
         mid= (l+r)/2;
         mm= mid*mid;

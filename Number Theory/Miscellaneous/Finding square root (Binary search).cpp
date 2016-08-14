@@ -13,14 +13,12 @@
 #include <cmath>
 
 
-inline double ABS(double a){return ((a<0)? -1*a: a);}
-
 double squareRoot(double n){
     if(n == 0) return 0.0;
     double l= 1, r= n, mid= (l+r)/2, mm= mid*mid;
     
     //while mid*mid is not equal to n, keep dividing the interval
-    while(ABS(mm-n) > 1E-9){
+    while(fabs(mm-n) > 1E-9){
         if(n > mm){
             l= mid;
         }

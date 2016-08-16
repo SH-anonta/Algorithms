@@ -23,6 +23,7 @@
 
 using namespace std;
 
+namespace{
 typedef long long LL;
 typedef vector<int> vint;
 typedef pair<int,int> pint;
@@ -31,7 +32,7 @@ typedef map<int,bool> mapib;
 typedef stringstream strstream;
 typedef unsigned long long ULL;
 
-//debug
+//Macros
 short CC_;
 #define sf scanf
 #define pf printf
@@ -53,7 +54,6 @@ const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
 const long long MOD= 1000000007;
 
-namespace{
 template <class T>void DA(T i,T e){while(i!=e){cout<<"Con>>( "<<++CC_<<" ) "<<*i++<<endl;}}
 template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "<<x[i]<<endl;}
 template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d", st++);*/}

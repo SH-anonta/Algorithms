@@ -12,19 +12,12 @@ T* merge(const T* ary1, int len1, const T* ary2, int len2){
     
     //run until any one of or both array run out of elements
     for(i= 0; i<lim && p1 < len1 && p2 < len2; i++){
-        if(ary1[p1] < ary2[p2]){
+        if(ary1[p1] <= ary2[p2]){
             combo[i]= ary1[p1];
             p1++;
         }
         else if(ary1[p1] > ary2[p2]){
             combo[i]= ary2[p2];
-            p2++;
-        }
-        else{   //when there equal elements in the array
-            combo[i]= ary1[p1]; //both element get added
-            i++;
-            combo[i]= ary2[p2];
-            p1++;
             p2++;
         }
     }

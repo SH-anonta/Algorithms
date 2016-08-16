@@ -1,27 +1,10 @@
-//Merge sort
+//Merge sort, a divide and conquer sorting algorithm
 // Worst case time complexity O(nlog(n))
 // space complexity O(n)
 // properties: in place, stable
 // a divide and conquer algorithm
 #include <iostream>
 #include <cstdio>
-
-using namespace std;
-
-//Macros
-short CC_;
-#define sf scanf
-#define pf printf
-#define PP getchar();
-#define NL cout<<"\n";
-#define pqueue priority_queue
-#define testb(x_, i_) ((x_&1<<i_)!=0)
-#define setb(x_, i_) (x_=(x_|(1<<i_)))
-#define clrb(x_, i_) (x_=(x_&(!(1<<i_))))
-#define DC(x_) cout<<">>> "<<#x_<<"\n";DA(x_.begin(), x_.end());
-#define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
-#define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
-#define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
 
 //pointer to full array, index of the two sub arrays to be merged
 // l to mid is 1st sub array and mid+1 to r is the 2nd sub array

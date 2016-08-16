@@ -61,6 +61,7 @@
 	- [Selection Sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Selection%20Sort.cpp)
 	- [Insertion sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Insertion%20sort.cpp)
 	- [Bubble sort](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Bubble%20sort.cpp)
+	- [Merge sort (recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Merge%20sort%20(recursive).cpp)
 + [**Pattern Printing**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
   - [Print star](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
 + [**String Manipulation**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)

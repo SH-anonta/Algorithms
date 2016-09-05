@@ -1,216 +1,228 @@
-// Binary search tree data structure
-// this is not a balanced tree
-// search, insertion and remove take O(h) [h is the height of the tree]
-//bug: remove method
-
 #include <iostream>
 #include <cstdio>
 
 using namespace std;
 
+namespace{
 short CC_;
+#define sf scanf
+#define pf printf
 #define PP getchar();
 #define NL cout<<"\n";
 #define pqueue priority_queue
-#define test(x_, i_) ((x_&1<<i_)!=0)
+#define testb(x_, i_) ((x_&1<<i_)!=0)
+#define setb(x_, i_) (x_=(x_|(1<<i_)))
+#define clrb(x_, i_) (x_=(x_&(!(1<<i_))))
 #define DC(x_) cout<<">>> "<<#x_<<"\n";DA(x_.begin(), x_.end());
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
-
+}
 
 template <typename T>
-class bst{
+class binarySearchTree{
 private:
     class Node{
     public:
         T data;
-        //left and right child
         Node *lChild, *rChild;
+        
         Node(){
-            data = T();
-            rChild= lChild= NULL;
+            data= T();
+            lChild= rChild= NULL;
         }
+        
         Node(const T& dt){
-            data = dt;
-            rChild= lChild= NULL;
+            data= dt;
+            lChild= rChild= NULL;
         }
     };
     Node* root;
-    int nodeCount;    
+    int nodeCount;
     
-public:
+public:    
     //default constructor
-    bst(){
+    binarySearchTree(){
         root= NULL;
         nodeCount= 0;
     }
     
-    inline bool empty(){
+    bool empty(){
         return nodeCount == 0;
     }
     
-    inline int size(){
+    int size(){
         return nodeCount;
     }
     
-    //find element in tree, returns it's pointer, returns NULL if not found
-    T* find(Node* root, const T& target){
-        if(root == NULL) return NULL;
-        if(root->data == target) return &(root->data);
-        
-        if(root->data >target) return find(root->lChild, target);
-        else return find(root->rChild, target);
-    }
-    
     //wrapper function
-    T* find(const T& target){
-        if(empty()) return NULL;
-        return find(root, target);
-    }
-    
-    void insert(Node** troot, const T& dt){
-        if(*troot == NULL){
-            *troot = new Node(dt);
-            return;
+    const T* find(const T& target){
+        if(empty()){
+            std::cerr<< "Underflow error!"<<std::endl;
         }
         
-        if((*troot)->data == dt){
-            nodeCount--;
-            return;
-        }
-        if((*troot)->data > dt){
-            insert(&((*troot)->lChild), dt);
-            return;
-        }
-        else{
-            insert(&((*troot)->rChild), dt);
-            return;
-        }
+        Node* temp= find(root, target);
+        if(temp == NULL) return NULL;
+        return &temp->data;
     }
     
-    //wrapper function
+    //find and return pointer to found element. NULL if not found
+    Node* find(Node* next, const T& target){
+        //target not found
+        if(next == NULL) return NULL;
+        //target found
+        else if(next->data == target) return next;
+        else if(next->data < target) return find(next->rChild, target);
+        else return find(next->lChild, target);
+    }
+    
+    Node* insert(Node* next, const T& dt){
+        if(next == NULL){
+            return new Node(dt);
+        }
+        
+        if(dt == next->data){
+            nodeCount--;    //decreasing previously increased count as duplicates are not allowed
+            return next;
+        }
+        else if(dt < next->data)
+            next->lChild= insert(next->lChild, dt);
+        else
+            next->rChild= insert(next->rChild, dt);
+        
+        return next;
+    }
+    
+    //Find and return pointer to in-order successor in the tree
+    Node* inorderSuccessor(Node* subRoot){
+        subRoot= subRoot->rChild;
+        while(subRoot->lChild != NULL){
+            subRoot= subRoot->lChild;
+        }
+        
+        return subRoot;
+    }
+    
     void insert(const T& dt){
         nodeCount++;
-        if(empty())
-            root= new Node(dt);
-        else
-            insert(&root, dt);   
-    }
-    
-    
-    void remove(Node** doom, const T& target){
-        if(*doom == NULL){
-            nodeCount++;
-            return;
-        }
-        if((*doom)->data == target){
-            bool l= (*doom)->lChild != NULL;
-            bool r= (*doom)->rChild != NULL;
-            //if the node is a leaf
-            if(!r && !l){
-                *doom= NULL;
-                delete *doom;
-                return;
-            }
-            Node** newRoot= &(*doom)->rChild;
-            //finding new root
-            if(newRoot != NULL){
-                while((*newRoot)->lChild != NULL){
-                    newRoot = &((*newRoot)->lChild);
-                }
-            }
-            else{
-                newRoot= &(*doom)->lChild;
-                while((*newRoot)->rChild != NULL){
-                    newRoot = &((*newRoot)->rChild);
-                }
-            } 
-            swap((*doom)->data, (*newRoot)->data);
-            *newRoot= NULL;
-            delete *newRoot;
+        if(root == NULL){
+            root = new Node(dt);
             return;
         }
         
-        if((*doom)->data > target)
-            remove(&(*doom)->lChild, target);
-        else
-            remove(&(*doom)->rChild, target);
+        insert(root, dt);
     }
     
+    
+    //wrapper function
     void remove(const T& target){
-        DD(nodeCount)
-        if(empty()) return;
-        remove(&root, target);
-        nodeCount--;
+        if(empty()){
+            return;
+        }
+        
+        //if remove was successful / returned non null pointer
+        if(find(root, target)){
+            nodeCount--;
+            remove(root, target);
+            if(nodeCount == 0) root= NULL;
+        }
     }
     
-    //traverse and print each element in-order
-    void inOrder(Node* root){
-        if(root == NULL) return;
-        inOrder(root->lChild);
-        std::cout<< root->data <<" ";
-        inOrder(root->rChild);
+    Node* remove(Node* next, const T& target){
+        if(next == NULL) return NULL;
+        
+        if(target == next->data){
+            //node has only one or no child
+            if(next->lChild == NULL){
+                Node* temp= next->rChild;
+                delete next;
+                return temp;
+            }
+            //node has only one or no child
+            else if(next->rChild == NULL){
+                Node* temp= next->lChild;
+                delete next;
+                return temp;
+            }
+            //node has two children
+            //replace this node with next larger element in the tree
+            Node* inorder_successor= inorderSuccessor(next);
+            next->data= inorder_successor->data;
+            next->rChild= remove(next->rChild, inorder_successor->data);    
+        }
+        else if(target < next->data)
+            next->lChild= remove(next->lChild, target);
+        else
+            next->rChild= remove(next->rChild, target);
+        
+        return next;
     }
     
-    //in order traversal wrapper function
-    void inOrder(){
-        if(empty()) return;
-        inOrder(root);
-        std::cout<<std::endl;
-    }
     
     void clear(Node* doom){
         if(doom == NULL) return;
-        clear(doom->lChild);
-        clear(doom->rChild);
-        
+        if(doom->lChild != NULL)
+            clear(doom->lChild);
+        if(doom->rChild != NULL)
+            clear(doom->rChild);
         delete doom;
     }
     
-    //wrapper fucntion
-    inline void clear(){
-        if(!empty()){
-            clear(root);
-            nodeCount= 0;
+    //wrapper function
+    void clear(){
+        if(!empty()) clear(root);
+    }
+    
+    //traverse and print each element in-order
+    void printInOrder(Node* next){
+        if(next == NULL) return;
+        else{
+            printInOrder(next->lChild);
+            std::cout<< next->data <<" ";
+            printInOrder(next->rChild);
         }
     }
     
-    ~bst(){
+    //in order traversal wrapper function
+    void printInOrder(){
+        if(empty()) return;
+        printInOrder(root);
+        std::cout<<std::endl;
+    }
+    
+    
+    ~binarySearchTree(){
         clear();
     }
 };
-
 
 int main(void)
 {
     using namespace std;
     
-    bst<int> t;
+    binarySearchTree<int> a;
     
-    t.insert(5);
-    t.insert(1);
-    t.insert(0);
-    t.insert(32);
-    t.insert(12);
-    t.insert(3);
-    t.insert(4);
+    char cmd;
+    int temp;
     
-    DD(t.size())
-    t.inOrder();
+    cout<< "press p *number* to insert a number in the bst"<<endl;
+    cout<< "press r *number* to remove a number in the bst"<<endl;
+    while(cin>>cmd){
+        if(cmd == 'p'){
+            cin>>temp;
+            a.insert(temp);
+        }
+        else if(cmd == 'r'){
+            cin>>temp;
+            a.remove(temp);
+        }
+        
+//        DD(a.root)
+        a.printInOrder();
+        cout<< "Size: "<< a.size() <<endl;
+//        cout<< "ios: "<< ((a.inorderSuccessor(a.root) != NULL)? a.inorderSuccessor(a.root)->data : 99999) <<endl;
+    }
     
-    t.remove(5);
-    t.remove(1);
-    t.remove(0);
-    t.remove(32);
-    DD(t.size())
-    t.inOrder();
-    t.remove(12);
-    t.remove(3);
-    t.remove(4);
-    
-    
-//    cout<< *t.find(5) <<endl;
     
     return 0;
 }

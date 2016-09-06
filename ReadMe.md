@@ -51,6 +51,7 @@
     * [**combinatorial search**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Combinatorial%20search)
     	- [Generating power set (Backtracking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20power%20set%20(Backtracking).cpp)
     	- [Generating power set (Bitmasking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20power%20set%20(Bitmasking).cpp)
+    	- [Generating all permutations](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20all%20permutations.cpp)
     * [**Number Bases**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
     	- [Binary to decimal (Nested multiplication)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Binary%20to%20decimal%20(Nested%20multiplication).cpp)
     	- [Octal to decimal (Nested multiplication)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Octal%20to%20Decimal%20(Nested%20multiplication).cpp)

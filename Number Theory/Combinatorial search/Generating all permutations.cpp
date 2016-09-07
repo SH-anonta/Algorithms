@@ -55,10 +55,11 @@ void generatePermutations(int alphabets){
     generatePermutations(alphabets, alphabets, &half_count, stats, temp, all_permutations);
     delete stats;
     
-    //time checking
+    //speed checking
 //    clock_t tt= clock();
 //    std::cout<< (double)tt/CLOCKS_PER_SEC <<std::endl;
     
+    //printing the permutations in lexicographic order
     std::set<std::string>::iterator i= all_permutations.begin(), nd= all_permutations.end();
     int permutation_no= 1;
     while(i != nd){

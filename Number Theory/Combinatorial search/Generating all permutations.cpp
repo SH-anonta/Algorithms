@@ -8,6 +8,7 @@
 #include <cstdio>
 #include <string>
 #include <algorithm>
+#include <ctime>
 #include <set>
 
 long long factorial(long long);
@@ -26,7 +27,7 @@ void generatePermutations(int n, int total, long long* count, bool* stats , std:
         return;
     }
     
-    for(int i= 0; i<total; i++){
+    for(int i= 0; *count != 0 && i<total; i++){
         if(stats[i] == false){
             stats[i]= true;
             perm.push_back(i+'A');
@@ -54,6 +55,10 @@ void generatePermutations(int alphabets){
     generatePermutations(alphabets, alphabets, &half_count, stats, temp, all_permutations);
     delete stats;
     
+    //time checking
+//    clock_t tt= clock();
+//    std::cout<< (double)tt/CLOCKS_PER_SEC <<std::endl;
+    
     std::set<std::string>::iterator i= all_permutations.begin(), nd= all_permutations.end();
     int permutation_no= 1;
     while(i != nd){
@@ -66,7 +71,10 @@ void generatePermutations(int alphabets){
 
 int main(void)
 {
-    generatePermutations(3);
+    using namespace std;
+            
+//    cout<< factorial(10) <<endl;
+    generatePermutations(4);
     
     return 0;
 }

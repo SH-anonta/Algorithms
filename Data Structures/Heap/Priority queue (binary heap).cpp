@@ -5,10 +5,11 @@
 //incase insertion exceeds array size, it automatically
 //doubles the array's size, resizing can also be done through
 
+
 #include <iostream>
 #include <cstdlib>
+#include <cstdio>
 
-using namespace std;
 
 template <typename T>
 class priorityQueue{
@@ -37,19 +38,33 @@ public:
         rml= 0;
         resize(nodeCap);
     }
+    
+    //copy constructor
+    priorityQueue(const priorityQueue& copy_from){
+        //1 more since root starts from index1
+        nodeCap= copy_from.nodeCap;
+        nodeCount= copy_from.nodeCount;
+        rml= copy_from.rml;
+        data= new int[nodeCap];
+        //copying the data over
+        for(int i= 1; i<=rml; i++){
+            data[i]= copy_from.data[i];
+        }
+    }
 
     //resizes the data array and copies the content to new location
     void resize(unsigned int new_size){
         nodeCap= new_size;
         T* to_delete= data;
         data = new T[new_size];
+        
         int copy_upto= ((nodeCount< new_size)? nodeCount: new_size);
         //copy over data from old storage to new
         for(int i= 1; i<= copy_upto; i++){
             data[i]= to_delete[i];
         }
 
-        delete[] to_delete;
+        if(to_delete != NULL) delete[] to_delete;
     }
 
     bool empty(){
@@ -66,8 +81,9 @@ public:
 
     void clear(){
         nodeCap= defaultCapacity;
+        resize(nodeCap);
         nodeCount= 0;
-        delete[] data;
+        if(data != NULL) delete[] data;
     }
 
     //retrieve the top of heap
@@ -172,7 +188,7 @@ int main(void)
         cout<<"Size: "<< a.size() <<"\n";
         cout<<"Capacity: "<< a.capacity()<<endl;
     }
-
+    
 
     return 0;
 }

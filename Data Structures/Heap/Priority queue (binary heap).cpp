@@ -45,6 +45,7 @@ public:
         nodeCap= copy_from.nodeCap;
         nodeCount= copy_from.nodeCount;
         rml= copy_from.rml;
+        if(data != NULL) delete[] data;
         data= new int[nodeCap];
         //copying the data over
         for(int i= 1; i<=rml; i++){

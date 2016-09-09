@@ -82,7 +82,7 @@ class undirectedGraph{
         delete[] to_delete;
     }
     
-    void addVertix(const T& dt){
+    void addVertex(const T& dt){
         if(data == NULL){
             lastNode= 0;
             nodeCount++;
@@ -99,6 +99,7 @@ class undirectedGraph{
     }
     
     void addEdge(const T& u, const T& v){
+        static bool added_to_v= false;
         if(data == NULL || empty()){
             return;
         }
@@ -111,6 +112,12 @@ class undirectedGraph{
             }
         }
         
+        //to add the edge to vertex v
+        if(added_to_v == false){
+            added_to_v= true;
+            addEdge(v, u);
+        }
+        else added_to_v= false;
     }
     
     int size(){
@@ -150,18 +157,12 @@ class undirectedGraph{
 int main(void)
 {
     undirectedGraph<int> a(5);
-    a.addVertix(1);
-    a.addVertix(5);
-    a.addVertix(6);
-    a.addVertix(4);
-    a.addVertix(2);
-    a.addVertix(3);
+    a.addVertex(1);
+    a.addVertex(2);
+    a.addVertex(3);
     
-    
-    a.addEdge(1, 5);
-    a.addEdge(1, 6);
-    a.addEdge(1, 5);
-    a.addEdge(6, 1);
+    a.addEdge(1, 3);
+    a.addEdge(2, 3);
     a.print();
     
     return 0;

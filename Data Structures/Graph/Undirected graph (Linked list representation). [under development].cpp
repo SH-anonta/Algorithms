@@ -71,13 +71,12 @@ class undirectedGraph{
         //adding 5 more node space just for safety
         if(nodeCount < new_cap) new_cap= nodeCount+5;
         data= new Node[new_cap];
+        
         //copy data from old memory to new memory
         //outer loop traverses from vertex to vertex
         //inner loop visits all of it's edges
         for(int i= 0; i<nodeCount; i++){
-            for(Node* j= &data[i], *k= &to_delete[i]; k!=NULL; k= k->next, j= j->next){
-                j= new Node(k->data);
-            }
+            data[i]= to_delete[i];
         }
         
         delete[] to_delete;
@@ -154,6 +153,10 @@ int main(void)
     a.addVertix(1);
     a.addVertix(5);
     a.addVertix(6);
+    a.addVertix(4);
+    a.addVertix(2);
+    a.addVertix(3);
+    
     
     a.addEdge(1, 5);
     a.addEdge(1, 6);

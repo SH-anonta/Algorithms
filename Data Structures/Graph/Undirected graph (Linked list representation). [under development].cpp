@@ -71,7 +71,6 @@ class undirectedGraph{
         //adding 5 more node space just for safety
         if(nodeCount < new_cap) new_cap= nodeCount+5;
         data= new Node[new_cap];
-        
         //copy data from old memory to new memory
         //outer loop traverses from vertex to vertex
         //inner loop visits all of it's edges
@@ -84,6 +83,7 @@ class undirectedGraph{
     
     void addVertex(const T& dt){
         if(data == NULL){
+            resize(default_nodeCap);
             lastNode= 0;
             nodeCount++;
             data[0]= Node(dt);
@@ -156,13 +156,14 @@ class undirectedGraph{
 
 int main(void)
 {
-    undirectedGraph<int> a(5);
+    undirectedGraph<int> a;
     a.addVertex(1);
     a.addVertex(2);
     a.addVertex(3);
     
     a.addEdge(1, 3);
     a.addEdge(2, 3);
+    a.addEdge(2, 1);
     a.print();
     
     return 0;

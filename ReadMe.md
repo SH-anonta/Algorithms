@@ -41,6 +41,7 @@
 	- [Qucik sort (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Qucik%20sort%20(Recursive).cpp)
 	- [Merge sort (recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Merge%20sort%20(recursive).cpp)
 + [**Dynamic programming**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Dynamic%20programming)
+	- [Coin change problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Coin%20change%20problem.cpp)
 	- [Minimum coin change problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Minimum%20coin%20change%20problem.cpp)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	* [**Prime Numbers**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers)

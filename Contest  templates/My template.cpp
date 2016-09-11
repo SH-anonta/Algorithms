@@ -42,6 +42,7 @@ short CC_;
 #define testb(x_, i_) ((x_&1<<i_)!=0)
 #define setb(x_, i_) (x_=(x_|(1<<i_)))
 #define clrb(x_, i_) (x_=(x_&(!(1<<i_))))
+#define all(container) container.begin(),container.end()
 #define DC(x_) cout<<">>> "<<#x_<<"\n";DA(x_.begin(), x_.end());
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);

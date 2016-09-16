@@ -41,6 +41,7 @@
 	- [Qucik sort (Recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Qucik%20sort%20(Recursive).cpp)
 	- [Merge sort (recursive)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Sorting%20Algorithems/Merge%20sort%20(recursive).cpp)
 + [**combinatorial search**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Combinatorial%20search)
+	- [Knight tour problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Knight%20tour%20problem.cpp)
 	- [Generating all permutations](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20all%20permutations.cpp)
 	- [Generating power set (Bitmasking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20power%20set%20(Bitmasking).cpp)
 	- [Generating power set (Backtracking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20power%20set%20(Backtracking).cpp)

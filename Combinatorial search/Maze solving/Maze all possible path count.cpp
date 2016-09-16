@@ -56,22 +56,22 @@ short CC_;
 const char WALL_SYMB= '#';
 const int max_size= 100;
 char maze[max_size][max_size];
-int grow, gcol;
+int gRow, gCol;
 
 //for debugging
 void printMaze(){
     cout<<endl;
-    for(int r= 0; r<grow; r++){
-        for(int c= 0; c<gcol; c++){
+    for(int r= 0; r<gRow; r++){
+        for(int c= 0; c<gCol; c++){
             cout<<maze[r][c];
         }
         cout<<endl;
     }
 }
 
-long long pathCount(int xpos, int ypos, const int szx, const int szy){
-    //path goes out of grid/maze
-    if(xpos<0 || ypos< 0 || xpos>=szx || ypos>= szy) return 0;
+long long pathCount_recur(int xpos, int ypos){
+    //path goes out of grid/maze [grow -> global var. row size]
+    if(xpos<0 || ypos< 0 || xpos>=gRow || ypos>= gCol) return 0;
     
     //path tries to go through wall
     if(maze[xpos][ypos] == WALL_SYMB || maze[xpos][ypos] == 'V') return 0;
@@ -88,10 +88,10 @@ long long pathCount(int xpos, int ypos, const int szx, const int szy){
     maze[xpos][ypos]= 'V';
     
     //try all four direction
-    sum+= pathCount(xpos+1, ypos, szx, szy);
-    sum+= pathCount(xpos-1, ypos, szx, szy);
-    sum+= pathCount(xpos, ypos+1, szx, szy);
-    sum+= pathCount(xpos, ypos-1, szx, szy);
+    sum+= pathCount_recur(xpos+1, ypos);
+    sum+= pathCount_recur(xpos-1, ypos);
+    sum+= pathCount_recur(xpos, ypos+1);
+    sum+= pathCount_recur(xpos, ypos-1);
     
     //un marking it as visited so other paths don't skip this square
     maze[xpos][ypos]= temp;
@@ -103,6 +103,8 @@ long long pathCount(int xpos, int ypos, const int szx, const int szy){
 //pointer to matrix and it's size
 long long pathCount(int row, int col){
     int startx, starty;
+    gRow= row;
+    gCol= col;
     
     for(int r= 0; r<row; r++){
         for(int c= 0; c<col; c++){
@@ -114,7 +116,7 @@ long long pathCount(int row, int col){
         }
     }
     
-    return pathCount(startx, starty, row, col);
+    return pathCount_recur(startx, starty);
 }
 
 
@@ -125,8 +127,6 @@ int main(void)
     int row, col;
     
     while(cin>>row>>col && row != 0 && col != 0){
-        grow= row;
-        gcol= col;
         for(int r= 0; r<row; r++){
             for(int c= 0; c<col; c++){
                 //incase end of line is reached ignore it

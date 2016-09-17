@@ -23,14 +23,6 @@ void printBoard(int board[8][8]){
     }
 }
 
-//TODO see if current path is a dead end
-bool seek(int board[8][8]){
-    for(int r= 0; r<8; r++){
-        for(int c= 0; c<8; c++){
-            
-        }
-    }
-}
 
 bool knightTourPath(int board[8][8], short x, short y, short count){
     //if path has been found (all squares have been visited)

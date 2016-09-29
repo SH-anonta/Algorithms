@@ -30,6 +30,7 @@ int main(void)
 {
     using namespace std;
     
+    
     int ctypes= 3;
     int coin_types[ctypes]= {2, 3, 5};
     int n= 11;

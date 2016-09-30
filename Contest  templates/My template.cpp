@@ -33,7 +33,7 @@ typedef stringstream strstream;
 typedef unsigned long long ULL;
 
 //Macros
-short CC_;
+LL CC_;
 #define sf scanf
 #define pf printf
 #define PP getchar();

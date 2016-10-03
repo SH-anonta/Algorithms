@@ -23,6 +23,7 @@
 
 using namespace std;
 
+//FOLD ME!!!
 namespace{
 typedef long long LL;
 typedef vector<int> vint;

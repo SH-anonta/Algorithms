@@ -74,7 +74,7 @@
 		- [Big Mod - Modular exponentiation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Big%20Mod%20-%20Modular%20exponentiation.cpp)
 		- [Finding square root (Binary search)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Finding%20square%20root%20(Binary%20search).cpp)
 + [**Graph algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Graph%20algorithms)
-	[Breath first search](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Graph%20algorithms/Breath%20first%20search.cpp)
+  - [Breath first search](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Graph%20algorithms/Breath%20first%20search.cpp)
 + [**Pattern Printing**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Pattern%20Printing)
   - [Print star](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
 + [**String Manipulation**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Manipulation)

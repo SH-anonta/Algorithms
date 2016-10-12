@@ -66,7 +66,6 @@ template <class T>inline T LCM(T x,T y){return((x*y)/__gcd(x,y));}
 LL todec(string& num, int b){LL dec=num[0]-(isupper(num[0])? 'A'-10: '0');for(int i=1;num[i];i++){if(num[i]>='A'&& num[i]<='Z')num[i]-='A'-10;else num[i]-='0';dec*= b;dec+= num[i];}return dec;}
 int bigMod(int b,int e,int m){if(e==0)return 1;if(!e&1){int temp=bigMod(b,e/2,m)%m;return(temp*temp)%m;}else return((b%m)*(bigMod(b,e-1,m))%m)%m;}
 inline LL POW(LL base, int exp){LL p= 1; while(exp-->0){p *= base;} return p;}
-bool ispal(const string& str){int len= str.length();for(int i= 0; i<len/2; i++){if(str[i]==str[len-i-1]){}else return false;}return true;}
 bool comp(const int a,const int b){return a>b;}
 }
 
@@ -89,7 +88,7 @@ void solve(void){
 }
 
 
-/*FILL ME WITH INPUTS!!!
+/*INPUTS!!!
 
 
 */

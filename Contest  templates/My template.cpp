@@ -38,7 +38,7 @@ LL CC_;
 #define sf scanf
 #define pf printf
 #define PP getchar();
-#define NL cout<<"\n";
+#define NL cout<<endl;
 #define pqueue priority_queue
 #define testb(x_, i_) ((x_&1<<i_)!=0)
 #define setb(x_, i_) (x_=(x_|(1<<i_)))
@@ -48,6 +48,7 @@ LL CC_;
 #define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
+#define DM(MT,n_,m_)pf("Matrix %s:\n", #MT);for(int r_=0;r_<n_;r_++){for(int c_= 0;c_<m_;c_++)pf("%4d ", MT[r_][c_]);NL}
 
 //constants
 const int SZ= 1E6;

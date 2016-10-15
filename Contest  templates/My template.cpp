@@ -80,10 +80,12 @@ void solve(void){
 //    while(cin>>n)
     for(int Case= 1; Case<=Tc; Case++)
     {
+//        sf("%d", &n);
         cin>>n;
         
         
-        cout<<"Case " << Case <<":\n";
+        cout<<"Case " << Case <<": " << n <<"\n";
+//        pf("Case %d: %d", Case, n);
     }
 
 }

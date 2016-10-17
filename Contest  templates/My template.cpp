@@ -34,7 +34,7 @@ typedef stringstream strstream;
 typedef unsigned long long ULL;
 
 //Macros
-LL CC_;
+int CC_;
 #define sf scanf
 #define pf printf
 #define PP getchar();
@@ -62,7 +62,6 @@ template <class T>void DA(T* x, int l){for(int i=0; i<l;i++)cout<<"["<<i<<"]>> "
 template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d", st++);*/}
 template <class T>void tobin(T n,char*bin){int pos= 1<<((int)log2(n));while(pos>=1){if((n & pos)==0)*bin='0';else*bin='1';pos>>=1;bin++;}*bin='\0';}
 template <class T>int strOccur(string&s,T&tgt){int oc= 0, p= s.find(tgt);while(p != string::npos){p = s.find(tgt, p+1);oc++;}return oc;}
-template <class T>LL factorial(T n){LL f= n;while(--n){f*= n;}return f;}
 template <class T>inline T LCM(T x,T y){return((x*y)/__gcd(x,y));}
 LL todec(string& num, int b){LL dec=num[0]-(isupper(num[0])? 'A'-10: '0');for(int i=1;num[i];i++){if(num[i]>='A'&& num[i]<='Z')num[i]-='A'-10;else num[i]-='0';dec*= b;dec+= num[i];}return dec;}
 int bigMod(int b,int e,int m){if(e==0)return 1;if(!e&1){int temp=bigMod(b,e/2,m)%m;return(temp*temp)%m;}else return((b%m)*(bigMod(b,e-1,m))%m)%m;}
@@ -80,12 +79,10 @@ void solve(void){
 //    while(cin>>n)
     for(int Case= 1; Case<=Tc; Case++)
     {
-//        sf("%d", &n);
         cin>>n;
         
         
         cout<<"Case " << Case <<": " << n <<"\n";
-//        pf("Case %d: %d", Case, n);
     }
 
 }

@@ -79,7 +79,7 @@
   - [Print star](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Pattern%20Printing/Print%20star.cpp)
 + [**String Algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Algorithms)
 	* [**Pattern Matching**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/String%20Algorithms/Pattern%20Matching)
-		- [Robin karp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Algorithms/Pattern%20Matching/Robin%20karp.cpp)
+		- [Rabin karp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Algorithms/Pattern%20Matching/Rabin%20karp.cpp)
   - [Find string occurrance cstring](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Find%20string%20occurrance%20cstring.cpp)
   - [Find string occurrance string objects](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Find%20string%20occurrance%20string%20objects.cpp)
   - [Anagram check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String Manipulation/Anagram check.cpp)

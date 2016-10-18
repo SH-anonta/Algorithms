@@ -1,4 +1,4 @@
-//Robin karp algorithm
+//Rabin karp algorithm
 //find pattern match in string linear time using rolling hash technique
 #include <iostream>
 

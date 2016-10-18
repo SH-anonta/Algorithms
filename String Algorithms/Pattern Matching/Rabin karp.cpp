@@ -1,5 +1,4 @@
-//Rabin karp algorithm
-//find pattern match in string linear time using rolling hash technique
+//Robin karp algorithm
 #include <iostream>
 
         
@@ -13,8 +12,8 @@ int robinCarp(const std::string& s, const std::string& b){
 
     //generate hash of pattern and first m char of string
     for(int i= m-1; i>= 0; i--){
-        pattern_hash += p*b[i];
-        current_hash += p*s[i];
+        pattern_hash += (p*b[i])%MOD;
+        current_hash += (p*s[i])%MOD;
         p *= 5;
     }
     
@@ -26,11 +25,11 @@ int robinCarp(const std::string& s, const std::string& b){
         if(pattern_hash == current_hash){
             if(s.find(b.c_str(), pos, m) != std::string::npos) return pos;
         }
-                
+
         current_hash -= p*s[pos];   //chopping off the left most char's value
-        current_hash *= 5;          //increasing the power of all the comps by 1
+        current_hash = (current_hash*5)%MOD;          //increasing the power of all the comps by 1
         current_hash += s[pos+m];   //adding a new char value to hash/ 
-        
+
         pos++;
     }
     

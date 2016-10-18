@@ -12,8 +12,8 @@ int robinCarp(const std::string& s, const std::string& b){
 
     //generate hash of pattern and first m char of string
     for(int i= m-1; i>= 0; i--){
-        pattern_hash = (pattern_hash+p*b[i])%MOD;
-        current_hash = (current_hash+p*s[i])%MOD;
+        pattern_hash = (pattern_hash+(p*b[i])%MOD)%MOD;
+        current_hash = (current_hash+(p*s[i])%MOD)%MOD;
         p *= 5;
     }
     

@@ -5,7 +5,7 @@
 //find the pattern b in string s
 //return index of first occurrence
 //return -1 if pattern not found
-int robinCarp(const std::string& s, const std::string& b){
+int rabinKarp(const std::string& s, const std::string& b){
     int n= s.size(), m = b.size();
     if(n<m) return -1;
     long long pattern_hash= 0, current_hash= 0, p= 1 , MOD= 7 + 1E15;
@@ -42,7 +42,7 @@ int main(void)
     string a= "robin karp";
     string b= "bin kar";
     
-    cout<< robinCarp(a, b) <<endl;
+    cout<< rabinKarp(a, b) <<endl;
     
     return 0;
 }

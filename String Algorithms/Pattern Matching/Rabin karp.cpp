@@ -4,7 +4,7 @@
         
 //find the pattern b in string s
 //return index of first occurrence
-//return -1 if pattern not found
+//return -1 if pattern not found 
 int rabinKarp(const std::string& s, const std::string& b){
     int n= s.size(), m = b.size();
     if(n<m) return -1;

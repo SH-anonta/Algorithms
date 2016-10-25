@@ -74,7 +74,7 @@
 		- [Big Mod - Modular exponentiation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Big%20Mod%20-%20Modular%20exponentiation.cpp)
 		- [Finding square root (Binary search)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Finding%20square%20root%20(Binary%20search).cpp)
 + [**Greedy Algorithm**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Greedy%20Algorithms)
-  - [Task schdulling](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Greedy%20Algorithms/Task%20schdulling.cpp)
+  - [Task schdulling](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Greedy%20Algorithms/Task%20schidulling.cpp)
   - [Fractional knapsack](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Greedy%20Algorithms/Fractional%20knapsack.cpp)
 + [**Graph algorithms**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Graph%20algorithms)
   - [Breath first search](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Graph%20algorithms/Breath%20first%20search.cpp)

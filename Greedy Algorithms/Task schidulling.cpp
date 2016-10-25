@@ -60,7 +60,7 @@ int max_tasks(task_time tasks[], int n, std::vector<task_time>& selected_tasks){
     
     for(int i= 0; i<n; i++){
         //skip tasks that overlap with current task
-        if(current_task_end >= tasks[i].first && i<n) continue;
+        if(current_task_end >= tasks[i].first) continue;
         
         current_task_end= tasks[i].second;
         selected_tasks.push_back(tasks[i]);

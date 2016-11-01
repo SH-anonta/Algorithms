@@ -43,7 +43,7 @@
 + [**Combinatorial search**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Combinatorial%20search)
 	- [Knight tour problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Knight%20tour%20problem.cpp)
 	- [Knight's tour problem (optimized)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Knight's%20tour%20problem%20(optimized).cpp)
-	- [Generating all permutations](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Combinatorial%20search/Generating%20all%20permutations.cpp)
+	- [Generating all permutations](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20all%20permutations.cpp)
 	- [Generating power set (Bitmasking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20power%20set%20(Bitmasking).cpp)
 	- [Generating power set (Backtracking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20power%20set%20(Backtracking).cpp)
 	* [Maze solving](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Combinatorial%20search/Maze%20solving)

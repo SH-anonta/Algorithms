@@ -58,6 +58,7 @@
     	- [Prime Factorization](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20Factorization.cpp)
     	- [Prime Check - simple algo](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20check%20-%20simple%20algo.cpp)
     * [**Divisors**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Divisors)
+    	- [Generate divisors of (1 to n)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Divisors/Generate%20divisors%20of%20(1%20to%20n).cpp)
     	- [Number of divisors (from prime factors)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Divisors/Number%20of%20divisors%20(from%20prime%20factors).cpp)
     * [**Number Bases**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Number%20Bases)
     	- [Binary to decimal (Nested multiplication)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Binary%20to%20decimal%20(Nested%20multiplication).cpp)

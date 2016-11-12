@@ -1,37 +1,47 @@
-//Simple BFS graph traversal (graph is undirected and is connected )
+//Breath first search
+//traverse every node from an initial node in closest nodes first order
+//the following implementation is simple and does not consider multiple connected components
+//the graph shown in the example is undirected but it can work for directed graphs as well
+//time complexity O(n)
+//*see input graph in bottom*
+
 #include <iostream>
-#include <cstring>
 #include <vector>
-#include <cstdio>
+#include <cstring>
 #include <queue>
 
-//print order of visiting nodes
-//start from node 1
-void breath_first_search(std::vector<std::vector<int>>& graph, int node_count){
+//graph start from node and number of nodes
+void bfs(std::vector<int> graph[], int start, int n){
+    bool visited[n+3];
     std::queue<int> q;
     
-    //to keep track of which nodes are visited
-    bool stat[node_count+5];
-    memset(stat, 0, sizeof(stat));
+    //set all nodes unvisited
+    for(int i= 1; i<=n; i++){
+        visited[i]= false;
+    }
     
-    q.push(1);  //start from 1st node
-    std::cout<< "1 ";
-    stat[1]= true;
+    //current node we are at and number of adjacent nodes of it(len)
+    int current, adj_node,len;
+    visited[start]= true;
+    q.push(start);
     
-    int current_node, adj_nodes;
+    std::cout<< "Order of traversal:\n";
     while(!q.empty()){
-        current_node= q.front();
-        adj_nodes= graph[current_node].size();
+        current= q.front();
+        len= graph[current].size();
+        visited[current]= true;
+        q.pop();
         
-        //visit neighbors of current node
-        for(int i= 0; i<adj_nodes; i++){
-            if(stat[graph[current_node][i]] == true) continue; //node already visited
-            q.push(graph[current_node][i]);
-            std::cout<< graph[current_node][i] <<" ";
-            stat[graph[current_node][i]]= true;
+        std::cout<< current <<" ";
+        
+        //loop through all adjacent nodes of current node
+        for(int i= 0; i<len; i++){
+            adj_node= graph[current][i];
+            if(visited[adj_node] == true) continue;
+            visited[adj_node]= true;
+            q.push(adj_node);
         }
         
-        q.pop();    //current node processed(all of it's adjacent nodes are visited)
     }
     
     std::cout<<std::endl;
@@ -41,31 +51,29 @@ void breath_first_search(std::vector<std::vector<int>>& graph, int node_count){
 int main(void)
 {
     using namespace std;
+    //n nodes, m edges, bfs starts from start
+    int n, m, u, v, start;
+    std::vector<int> graph[100];
     
-    //representing the graph
-    vector<vector<int>> graph(101); //up to 100 vertices/nodes
-    int n, m, a,b; //n nodes, m edges, a and b have edges
     cin>>n>>m;
     
+    //input the edges
     while(m--){
-        cin>>a>>b;
-        //edge insertion
-        graph[a].push_back(b);
-        graph[b].push_back(a);
+        cin>>u>>v; //there is an edge between u and v
+        graph[u].push_back(v);
+        graph[v].push_back(u);
     }
+    cin>>start;
     
-    cout<< "Order of traversal:"<<endl;
-    breath_first_search(graph, n);
+    bfs(graph, start, n);
     
     return 0;
 }
 
-/*
-Graph input:
-n m [n nodes m edges, m lines follow with edge description]
- 
-7 8
 
+
+/*
+7 8
 1 2  
 1 3
 2 5  
@@ -74,5 +82,5 @@ n m [n nodes m edges, m lines follow with edge description]
 4 5
 4 6
 5 7  
- 
+1 
  */

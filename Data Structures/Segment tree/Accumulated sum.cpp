@@ -45,14 +45,16 @@ int main(void)
         if(s == "range"){
             cin>>l>>r;
             
-            cout<< l<<" "<<r<< " "<<accumulate[r]-accumulate[l-1] <<endl;
+            cout<<accumulate[r]-accumulate[l-1] <<endl;
         }
         else if(s == "update"){
             cin>>k>>e;
-            data[k]= e;
-            for(int i = k; i<n; i++){
+            for(int i = k+1; i<=n; i++){
+                accumulate[i]-= data[k];
                 accumulate[i]+= e;
             }
+            data[k]= e;
+            accumulate[k]= accumulate[k-1]+e;
         }
     }
     

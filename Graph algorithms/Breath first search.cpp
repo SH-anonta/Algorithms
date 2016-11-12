@@ -29,7 +29,6 @@ void bfs(std::vector<int> graph[], int start, int n){
     while(!q.empty()){
         current= q.front();
         len= graph[current].size();
-        visited[current]= true;
         q.pop();
         
         std::cout<< current <<" ";

@@ -29,7 +29,7 @@
 		- [Binary search tree](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Trees/Binary%20search%20tree.cpp)
 	* [**Heap**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Heap)
 		- [Priority queue (binary heap)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Heap/Priority%20queue%20(binary%20heap).cpp)
-	* [Segment tree](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Segment%20tree)
+	* [**Segment tree**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Segment%20tree)
 		- [Accumulated sum](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Segment%20tree/Accumulated%20sum.cpp)
 	* [**Miscellaneous**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Miscellaneous)
 + [**Searching Algorithems**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Searching%20Algorithems)

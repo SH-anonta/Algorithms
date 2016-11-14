@@ -1,25 +1,5 @@
 //#Name: Sofen Haque Anonta  #Problm:
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <cstring>
-#include <cstdlib>
-#include <cstdarg>
-#include <utility>
-#include <bitset>
-#include <cctype>
-#include <cstdio>
-#include <vector>
-#include <string>
-#include <cmath>
-#include <ctime>
-#include <queue>
-#include <deque>
-#include <stack>
-#include <set>
-#include <map>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 //FOLD ME!!!

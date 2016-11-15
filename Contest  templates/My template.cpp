@@ -1,4 +1,4 @@
-//#Name: Sofen Haque Anonta  #Problm:
+//#Name: Sofen Hoque Anonta  #Problm:
 #include <bits/stdc++.h>
 using namespace std;
 

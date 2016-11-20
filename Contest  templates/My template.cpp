@@ -62,11 +62,6 @@ void solve(void){
 }
 
 
-/*INPUTS!!!
-
-
-*/
-
 
 int main(void){
     ios_base::sync_with_stdio(false);

@@ -7,9 +7,6 @@ namespace{
 typedef long long LL;
 typedef vector<int> vint;
 typedef pair<int,int> pint;
-typedef map<int,int> mapii;
-typedef map<int,bool> mapib;
-typedef stringstream strstream;
 typedef unsigned long long ULL;
 
 //Macros

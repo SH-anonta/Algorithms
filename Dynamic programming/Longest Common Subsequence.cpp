@@ -7,21 +7,6 @@
 #include <cstring>
 #include <cstdio>
 
-using namespace std;
- 
-//Macros
-int CC_;
-#define sf scanf
-#define pf printf
-#define PP cin.get();
-#define NL cout<<endl;
-#define all(container) container.begin(),container.end()
-#define DC(x_) cout<<">>> "<<#x_<<"\n";DA(x_.begin(), x_.end());
-#define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
-#define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
-#define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
-#define DM(MT,n_,m_)pf("Matrix %s:\n   ", #MT);for(int i_= 0;i_<m_;i_++)pf("%d ", i_);NL;NL;for(int r_=0;r_<n_;r_++){pf("%2d ", r_);for(int c_= 0;c_<m_;c_++)pf("%c ", MT[r_][c_]);NL}
-
 
 //store subproblem answers in cache
 int cache[10000][10000];
@@ -57,9 +42,7 @@ int LCS(std::string& s1, std::string s2){
 //given the first string and the length of both
 //return LCS by following instructions in track array
 std::string LCS_string(std::string& s, int m, int n){
-//    DD(m<<" "<<n)
-//    DD(track[m][n])
-    if(m <= 0 || n <= 0) return string("");
+    if(m <= 0 || n <= 0) return std::string("");
     if(track[m][n] == 'c'){
         return LCS_string(s, m-1, n-1)+s[m-1];
 //        std::cout<< s[m-1];
@@ -70,7 +53,7 @@ std::string LCS_string(std::string& s, int m, int n){
         return LCS_string(s, m, n-1);
     else{
         std::cerr<<"ERROR: invalid instruction in LCS track matrix\n";
-        return string("__ERROR__");
+        return std::string("__ERROR__");
     }
 }
 
@@ -85,10 +68,8 @@ int main(void)
         if(s == "") break;
         
         cout<< "LCS length: " << LCS(s, t) <<endl;
-//        DM(track,  s.size(), t.size());
         cout<< "LCS: ";
         cout<< "LCS :"<< LCS_string(s, s.size(), t.size()) <<endl;
-//        LCS_string(s, s.size(), t.size()); 
         cout<<endl;
     }
     return 0;

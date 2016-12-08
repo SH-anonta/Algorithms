@@ -2,7 +2,7 @@
 //given a DAG(Directed Acyclic Graph) find a topological sort
 
 /*  sample input:
- * n vertix, m edges, m lines describe m directed edges
+ * n vertex, m edges, m lines describe m directed edges
 5 4
 1 2
 2 3

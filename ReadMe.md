@@ -54,6 +54,7 @@
 	* [Maze solving](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Combinatorial%20search/Maze%20solving)
 		- [Maze all possible path count](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Maze%20solving/Maze%20all%20possible%20path%20count.cpp)
 + [**Dynamic programming**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Dynamic%20programming)
+	- [0-1 Knapsack](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/0-1%20Knapsack.cpp)
 	- [Coin change problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Coin%20change%20problem.cpp)
 	- [Minimum coin change problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Minimum%20coin%20change%20problem.cpp)
 	- [Longest Common Subsequence](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Longest%20Common%20Subsequence.cpp)

@@ -11,7 +11,9 @@ typedef unsigned long long ULL;
 
 //Macros
 int CC_;
+#define FF first
 #define sf scanf
+#define ZZ second
 #define pf printf
 #define PP cin.get();
 #define NL cout<<endl;
@@ -21,7 +23,9 @@ int CC_;
 #define SS printf(">_<LOOOOOK@MEEEEEEEEEEEEEEE<<( %d )>>\n",++CC_);
 #define EXT(st_) cout<<"\n>>>Exicution Time: "<<(double)(clock()-st_)/CLOCKS_PER_SEC<<endl;
 #define DM(MT,n_,m_)pf("Matrix %s:\n   ", #MT);for(int i_= 0;i_<m_;i_++)pf("%4d ", i_);NL;NL;for(int r_=0;r_<n_;r_++){pf("%2d ", r_);for(int c_= 0;c_<m_;c_++)pf("%4d ", MT[r_][c_]);NL}
- 
+#define mem(a_,b_)(a_, b_, sizeof(a_));
+
+
 //constants
 const int SZ= 1E6;
 const double EPS= 1E-9;
@@ -65,8 +69,7 @@ int main(void){
     cin.tie(NULL);
 
     solve();
-   
-
+    
     
     return 0;
 }

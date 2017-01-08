@@ -58,6 +58,7 @@
 	- [Coin change problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Coin%20change%20problem.cpp)
 	- [Minimum coin change problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Minimum%20coin%20change%20problem.cpp)
 	- [Longest Common Subsequence](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Longest%20Common%20Subsequence.cpp)
+	- [Maximum sub array sum(Kadane's algorithm)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Dynamic%20programming/Maximum%20sub%20array%20sum(Kadane's%20algorithm).cpp)
 + [**Number Theory**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory)
 	* [**Prime Numbers**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Prime%20Numbers)
     	- [Prime number generation - sieve of eratosthenes](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Prime%20Numbers/Prime%20number%20generation%20-%20sieve%20of%20eratosthenes.cpp)

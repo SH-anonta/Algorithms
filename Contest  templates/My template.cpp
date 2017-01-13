@@ -27,7 +27,6 @@ int CC_;
 
 
 //constants
-const int SZ= 1E6;
 const double EPS= 1E-9;
 const double PI= 2*acos(0.0);
 const long long MOD= 1000000007;
@@ -43,6 +42,8 @@ int bigMod(int b,int e,int m){if(e==0)return 1;if(!(e&1)){int temp=bigMod(b,e/2,
 inline LL POW(LL base, int exp){LL p= 1; while(exp-->0){p *= base;} return p;}
 bool comp(const int a,const int b){return a>b;}
 }
+
+const int sss= 1E6;
 
 void solve(void){
     int Tc;

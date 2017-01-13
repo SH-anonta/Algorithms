@@ -6,13 +6,14 @@
 #include <cstdio>
 #include <utility>
 #include <vector>
+#include <queue>
 
 std::vector<int> graph[1000];  //the graph is stored here
-char stats[1000];   //w for unvisited, g for exploring b for visited
+char stats[1000];       //w for unvisited, g for exploring b for visited
 int parent[1000];       //keep record of who is who's parent in DFS tree
 int entry_time[1000];    //start time
 int exit_time[1000];    //end   time
-int low[1000]; //stire the minimum entry time of the desendents of current node
+int low[1000];          //stire the minimum entry time of the desendents of current node
 int visit_time;
 
 typedef std::pair<int, int> Edge;
@@ -37,7 +38,7 @@ void dfs(int n){
             
             dfs(next);
             
-            if(low[next] >= entry_time[n]) cut_node[n]= true;
+            if(low[next] >= entry_time[n] && n != dfs_root) cut_node[n]= true;
             if(low[next] > entry_time[n]) cut_edge.push_back(Edge(n, next));
             
             low[n]= std::min(low[n], low[next]);
@@ -97,8 +98,10 @@ int main(void)
     }
     
     int cut_edges= cut_edge.size();
+    
     cout<< "Cut nodes: ";
     for(int i= 1; i<= n; i++){
+        //Important must skip root node of dfs tree
         if(cut_node[i] == true){
             cout<< i <<" ";
         }

@@ -1,4 +1,5 @@
 //Find articulation points and edges in graph
+//Using Tarjan's algorithm //use of dfs node discover time
 //time complexity O(E+V)
 
 #include <iostream>
@@ -44,7 +45,7 @@ void dfs(int n){
             low[n]= std::min(low[n], low[next]);
         }
         else if(next != parent[n]){
-            low[n]= low[n]= std::min(low[n], entry_time[next]);
+            low[n]= std::min(low[n], entry_time[next]);
         }
     }
     

@@ -22,7 +22,17 @@ class segment{
     point a, b;
 
     //return the determinant of the matrix which represents a triangle
-    int determinant(point p){
+    
+    double slope(){
+        if(a.x > b.x) swap(a, b);
+        
+        if(a.x == b.x) return 0;
+        
+        return (a.y-b.y)/(a.x-b.x);
+    }
+    
+    //positive = anti clockwise, negative = clockwise, 0 = collinear
+    double determinant(point p){
         return a.x*(b.y - p.y) - a.y*(b.x - p.x) + (b.x*p.y - p.x * b.y);
     }
 
@@ -52,8 +62,8 @@ class segment{
 
 
 int main(){
-    point p(3,1);
-    point q(3,3);
+    point p(46,-2);
+    point q(2,50);
 
     point a(-2 ,-3);
     point b(-2 ,-2);
@@ -62,7 +72,7 @@ int main(){
     segment s(p,q);
     segment t(a,b);
 
-    cout<< q.distance(p)<<endl;
+    cout<< s.slope() <<endl;
 
     return 0;
 }

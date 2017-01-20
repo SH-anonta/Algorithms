@@ -14,7 +14,7 @@ class point{
     }
     
     point(){}
-    point(int xx, int yy){x= xx; y= yy;}
+    point(int xx, int yy){x= xx; y= yy; }
 };
 
 class segment{
@@ -24,21 +24,19 @@ class segment{
     //return the determinant of the matrix which represents a triangle
     
     double slope(){
-        if(a.x > b.x) swap(a, b);
-        
-        if(a.x == b.x) return 0;
+        if(a.x == b.x) return 0; //this case would cause error
         
         return (a.y-b.y)/(a.x-b.x);
     }
     
     //positive = anti clockwise, negative = clockwise, 0 = collinear
-    double determinant(point p){
+    double orientation(point p){
         return a.x*(b.y - p.y) - a.y*(b.x - p.x) + (b.x*p.y - p.x * b.y);
     }
 
     bool pointsOnSameSide(point A, point B){
-        int p1= determinant(A);
-        int p2= determinant(B);
+        int p1= orientation(A);
+        int p2= orientation(B);
 
         if(p1 >= 0 && p2 >= 0 || p1 <= 0 && p2 <= 0) return true;
 
@@ -55,7 +53,7 @@ class segment{
 
     }
     
-    segment(point aa, point bb){a= aa;b=bb;}
+    segment(point aa, point bb){a= aa;b=bb; if(a.x > b.x) swap(a, b);}
     segment(){}
 };
 

@@ -20,7 +20,6 @@ const int heap_size= 4*array_size;
 
 // index 0, value 0 is not part of input
 int array[array_size]= {0, 1, 2, -4, 9, 21, 42, -30,11, 33, 12};
-//int array[array_size]= {0, 2, 2, -4, 9, 21, 42, -30,11, 33, 12};
 int tree[heap_size];
 
 //make a segment tree with elements of array
@@ -70,13 +69,6 @@ void treeUpdate(int heap_index, int l, int r, int array_index, int new_value){
         return;
     }
     
-    //when array_index is outside of current node's range
-    if(l > array_index || r < array_index){
-        //return previous values
-//        return tree[heap_index];
-        return;
-    }
-    
     int mid= (l+r)/2;
     if(array_index <= mid)
         treeUpdate(2*heap_index, l, mid, array_index, new_value);
@@ -106,6 +98,9 @@ int main(void){
         else{
             cout<< "Enter index and new value" <<endl;
             treeUpdate(1, 1, elements, st, nd);
+//            for(int i= 1; i<= 26; i++){
+//                cout<< i <<" "<< tree[i] <<endl;
+//            }
             
             cout<< "Updated" <<endl;
         }

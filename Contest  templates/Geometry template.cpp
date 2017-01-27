@@ -29,6 +29,7 @@ class segment{
         return (a.y-b.y)/(a.x-b.x);
     }
     
+    //orientation of ordered points a, b, p
     //positive = anti clockwise, negative = clockwise, 0 = collinear
     double orientation(point p){
         return a.x*(b.y - p.y) - a.y*(b.x - p.x) + (b.x*p.y - p.x * b.y);

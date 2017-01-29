@@ -10,10 +10,6 @@
 
 #include <iostream>
 
-using namespace std;
-int CC_;
-#define DD(x_) cout<<">>>>( "<<++CC_<<" ) "<<#x_<<": "<<x_<<endl;
-
 const int array_size= 1000;
 const int heap_size= 4*array_size;
 //size of the heap should be at least 4*size of array
@@ -25,19 +21,19 @@ int tree[heap_size];
 //make a segment tree with elements of array
 //heap_index -node's index in heap
 //l and r    -current node's range
-int initializeTree(int heap_index, int l, int r){
+void initializeTree(int heap_index, int l, int r){
     //a leaf is reached
     if(l == r){
         tree[heap_index]= array[l];
-        return tree[heap_index];
+        return;
     }
     
     int mid= (l+r)/2;
     
     //current node gets the sum of it's children
-    tree[heap_index]=  initializeTree(2*heap_index, l, mid);
-    tree[heap_index]+= initializeTree(2*heap_index+1, mid+1, r);
-    return tree[heap_index];
+    initializeTree(2*heap_index, l, mid);
+    initializeTree(2*heap_index+1, mid+1, r);
+    tree[heap_index]= tree[2*heap_index]+tree[2*heap_index+1];
 }
 
 //return sum of elements in [st, nd] in O(lg(n)) (start and end of range of query)
@@ -79,7 +75,7 @@ void treeUpdate(int heap_index, int l, int r, int array_index, int new_value){
 }
 
 int main(void){
-    
+    using namespace std;
     int elements= 10;
     initializeTree(1, 1, elements);
     

@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//FOLD ME!!!
+//FOLD ME
 namespace{
 typedef long long LL;
 typedef vector<int> vint;
@@ -11,10 +11,9 @@ typedef unsigned long long ULL;
 
 //Macros
 int CC_;
-#define FF first
 #define sf scanf
-#define ZZ second
 #define pf printf
+#define endl "\n"
 #define PP cin.get();
 #define NL cout<<endl;
 #define all(container) container.begin(),container.end()
@@ -57,7 +56,7 @@ void solve(void){
         cin>>n;
         
         
-        cout<<"Case " << Case <<": " << n <<"\n";
+        cout<<"Case " << Case <<": " << n <<endl;
     }
 
 }

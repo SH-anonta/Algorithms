@@ -76,6 +76,7 @@
     	- [Decimal to binary converter](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Decimal%20to%20binary%20converter.cpp)
     	- [Binary to decimal converter](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Number%20Bases/Binary%20to%20decimal%20converter.cpp)
 	* [**Miscellaneous**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Number%20Theory/Miscellaneous)
+		- [Euler's totient (phi)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Euler's%20totient%20(phi).cpp)
 		- [GCD and LCM](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/GCD%20and%20LCM.cpp)
 		- [random numbers](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/random%20numbers.cpp)
 		- [Josephus Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Number%20Theory/Miscellaneous/Josephus%20Problem.cpp)

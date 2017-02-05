@@ -13,7 +13,6 @@ typedef unsigned long long ULL;
 int CC_;
 #define sf scanf
 #define pf printf
-#define endl "\n"
 #define PP cin.get();
 #define NL cout<<endl;
 #define all(container) container.begin(),container.end()

@@ -1,3 +1,5 @@
+
+
 //#Name: Sofen Hoque Anonta  #Problm:
 #include <bits/stdc++.h>
 using namespace std;
@@ -35,12 +37,15 @@ template <class T>inline void sary(T* st, T* nd){while(st<nd)cin>>*st++;/*sf("%d
 template <class T>void tobin(T n,char*bin){int pos= 1<<((int)log2(n));while(pos>=1){if((n & pos)==0)*bin='0';else*bin='1';pos>>=1;bin++;}*bin='\0';}
 template <class T>inline T LCM(T x,T y){return((x*y)/__gcd(x,y));}
 LL todec(string& num, int b){LL dec=num[0]-(isupper(num[0])? 'A'-10: '0');for(int i=1;num[i];i++){if(num[i]>='A'&& num[i]<='Z')num[i]-='A'-10;else num[i]-='0';dec*= b;dec+= num[i];}return dec;}
+LL bigMod(LL x, LL y, LL m){if(y == 0) return 1;LL p= bigMod(x, y/2, m)%m;p= (p*p)%m;return ((y&1)? (x*p)%m :p);}
+ULL ncr(int n, int k){ULL res= 1;if(k>n-k)k= n-k;for(int i=0; i<k; i++){res *= n-i;res /= i+1;}return res;}
 int phi(int n){int ret= n;for(int i= 2; i*i <= n; i++){if(n % i == 0){while(n%i == 0){n /= i;}ret -= ret/i;}}if(n > 1) ret -= ret/n;return ret;}
-int bigMod(int b,int e,int m){if(e==0)return 1;if(!(e&1)){int temp=bigMod(b,e/2,m)%m;return(temp*temp)%m;}else return((b%m)*(bigMod(b,e-1,m))%m)%m;}
+int egcd(int a, int b, int& x, int& y){if(a == 0){x= 0;y= 1;return b;}int x1, y1;int gcd= egcd(b%a, a, x1, y1);x= y1 - (b/a) * x1;y= x1;return gcd;}
 bool comp(const int a,const int b){return a>b;}
 }
 
 const int sss= 1E6;
+
 
 void solve(void){
     int Tc;

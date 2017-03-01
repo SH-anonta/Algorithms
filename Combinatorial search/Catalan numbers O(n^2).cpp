@@ -4,13 +4,13 @@
 #include <cstring>
 
 const int asize= 1006;
-unsigned long catalan_numbers[asize];
+long long catalan_numbers[asize];
 
-unsigned long catalan(int n){
+long long catalan(int n){
     if(n <= 1) return 1;
     if(catalan_numbers[n] != -1) return catalan_numbers[n];
     
-    unsigned long cat= 0;
+    long long cat= 0;
     
     for(int i= 0; i<n; i++){
         cat+= catalan(i)*catalan(n-i-1);

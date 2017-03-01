@@ -1,5 +1,3 @@
-
-
 //#Name: Sofen Hoque Anonta  #Problm:
 #include <bits/stdc++.h>
 using namespace std;

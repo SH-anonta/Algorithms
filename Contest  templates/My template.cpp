@@ -45,16 +45,15 @@ bool comp(const int a,const int b){return a>b;}
 const int sss= 1E6;
 
 
-void solve(void){
+void solve(){
     int Tc;
     int n;
     
     cin>>Tc;
     cin.ignore();
     
-//    while(cin>>n)
-    for(int Case= 1; Case<=Tc; Case++)
-    {
+//    while(cin>>n){
+    for(int Case= 1; Case<=Tc; Case++){
         cin>>n;
         
         

@@ -3,7 +3,6 @@
 ###Index:
 
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
-	- [My Geometry template](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Geometry%20template.cpp)
 	- [My template Java](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Java%20template.java)
 	- [My template C++](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
 + [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)

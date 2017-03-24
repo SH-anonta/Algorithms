@@ -104,7 +104,4 @@
   		- [KMP Algorithm](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Algorithms/Pattern%20Matching/KMP%20Algorithm.cpp)
   - [Find string occurrance cstring](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Find%20string%20occurrance%20cstring.cpp)
   - [Find string occurrance string objects](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Find%20string%20occurrance%20string%20objects.cpp)
-  - [Anagram check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/StringManipulation/Anagram check.cpp)
-  - [Palindrome check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Palindrome%20check.cpp)
-  - [Pangram check](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/String%20Manipulation/Pangram%20check.cpp)
   

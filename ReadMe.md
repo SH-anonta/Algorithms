@@ -52,6 +52,7 @@
 	- [Generating all permutations](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20all%20permutations.cpp)
 	- [Generating power set (Bitmasking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20power%20set%20(Bitmasking).cpp)
 	- [Generating power set (Backtracking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20power%20set%20(Backtracking).cpp)
+	- [Permutations with repetition](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Permutations%20with%20repetition.cpp)
 	* [Maze solving](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Combinatorial%20search/Maze%20solving)
 		- [Maze all possible path count](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Maze%20solving/Maze%20all%20possible%20path%20count.cpp)
 + [**Dynamic programming**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Dynamic%20programming)

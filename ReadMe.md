@@ -29,6 +29,7 @@
 		- [Union Find Disjoint Set](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Graph/Union%20Find%20Disjoint%20Set.cpp)
 	* [**Trees**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Trees)
 		- [Binary search tree](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Trees/Binary%20search%20tree.cpp)
+		- [Trie (Prefix tree).cpp](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Trees/Trie%20(Prefix%20tree).cpp)
 	* [**Heap**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Heap)
 		- [Priority queue (binary heap)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Heap/Priority%20queue%20(binary%20heap).cpp)
 	* [**Segment tree**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Segment%20tree)

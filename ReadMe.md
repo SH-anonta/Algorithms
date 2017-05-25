@@ -1,6 +1,6 @@
-##Implimentation of Algorithms and Datastructures
+## Implimentation of Algorithms and Datastructures
 
-###Index:
+### Index:
 
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
 	- [My template Java](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Java%20template.java)

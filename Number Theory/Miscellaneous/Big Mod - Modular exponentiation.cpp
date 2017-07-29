@@ -11,7 +11,7 @@ int bigMod(int base, int exp, int m){
 
     if(exp == 0) return 1;
 
-    if(!exp & 1){ //if exp is even
+    if(!(exp & 1)){ //if exp is even
         int temp= bigMod(base, exp/2, m)%m;
         return (temp*temp)%m;
     }
@@ -23,7 +23,6 @@ int bigMod(int base, int exp, int m){
 int main(void)
 {
     cout<< bigMod(71, 569, 13) <<endl;
-    cout<< bigMod(754, 5646, 125) <<endl;
     
     return 0;
 }

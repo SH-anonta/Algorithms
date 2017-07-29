@@ -67,7 +67,7 @@ void solve(){
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-//    freopen("D:/input.txt", "r", stdin);
+//    freopen("F:/input.txt", "r", stdin);
     solve();
     
     return 0;

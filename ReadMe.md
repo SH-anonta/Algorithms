@@ -53,7 +53,7 @@
 	- [Generating power set (Backtracking)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Generating%20power%20set%20(Backtracking).cpp)
 	- [Permutations with repetition](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Permutations%20with%20repetition.cpp)
 	* [**Constraint Satisfaction Problem**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Combinatorial%20search/Constraint%20Satisfaction%20problem)
-		- [8 Puzzle {roblem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Constraint%20Satisfaction%20problem/8%20Puzzle%20problem.py)
+		- [8 Puzzle Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Constraint%20Satisfaction%20problem/8%20Puzzle%20problem.py)
 		- [8 Queen Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Constraint%20Satisfaction%20problem/8%20Queen%20Problem.py)
 		- [Knight Tour Problem](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Constraint%20Satisfaction%20problem/Knight%20tour%20problem.cpp)
 		- [Knight's Tour Problem (optimized)](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Combinatorial%20search/Constraint%20Satisfaction%20problem/Knight's%20tour%20problem%20(optimized).cpp)

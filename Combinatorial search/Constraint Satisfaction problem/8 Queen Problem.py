@@ -1,3 +1,10 @@
+'''
+Author: Sofen Hoque Anonta
+Problem: Find all posible arrangements in which
+8 queens can be placed in an 8 by 8 chess board
+such that no queen is under attack 
+'''
+
 import sys
 
 

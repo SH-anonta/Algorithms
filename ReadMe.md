@@ -5,8 +5,6 @@
 + [**Contest templates**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Contest%20%20templates)
 	- [My template Java](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/Java%20template.java)
 	- [My template C++](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Contest%20%20templates/My%20template.cpp)
-+ [**Big Integer**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Big%20Integer)
-	* [Factorial of Bigint](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Big%20Integer/Factorial%20of%20Bigint.java)
 + [**Data Structures**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures)
 	* [**Array**](https://github.com/SH-anonta/CPP-Code-Snippets/tree/master/Data%20Structures/Array)
 		- [Dynamic array implementation](https://github.com/SH-anonta/CPP-Code-Snippets/blob/master/Data%20Structures/Array/Dynamic%20array%20implementation.cpp)
